@@ -1,61 +1,114 @@
+/* Resetting default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Visby CF', sans-serif; /* Set default body font */
+    background-color: #14262b; /* Background color for the entire page */
+    color: #f4f4f4; /* Light text color to contrast the dark background */
 }
 
-header {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 50px 0;
+/* Container for layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 50px;
-}
-
-header h2 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-section {
-    margin: 50px auto;
-    max-width: 800px;
+/* Left Sidebar (Profile Card) */
+.sidebar {
+    width: 20%;
+    background-color: #fff;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* More visible shadow */
+    color: #333; /* Dark text inside the card */
 }
 
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+/* Profile Card styling */
+.profile-card {
+    text-align: center;
+}
+
+/* Placeholder profile picture with circular shape */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     margin-bottom: 20px;
-    font-size: 28px;
 }
 
-ul {
-    list-style: none;
+h1 {
+    font-family: 'Futura Condensed Extra Black', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for the name */
+}
+
+/* Social media links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Right Content Section */
+.content {
+    width: 80%;
+    padding: 40px;
+    background-color: white;
+    color: #333; /* Dark text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More visible shadow */
+    border-radius: 10px;
+}
+
+/* Main Headers */
+h2 {
+    font-family: 'Futura Condensed Extra Black', sans-serif;
+    font-size: 100pt;
+    margin-bottom: 20px;
+    color: #14262b; /* Dark blue for header text */
+}
+
+/* Paragraph text in sections */
+p {
+    font-family: 'Visby CF', sans-serif;
+    font-size: 21pt;
+    line-height: 1.6;
+    color: #333; /* Dark text color for readability */
+}
+
+/* Skills Section */
+#skills {
+    margin-top: 40px;
+}
+
+/* Skills List */
+.skills-list {
+    list-style-type: none;
     padding: 0;
 }
 
-ul li {
-    background-color: #333;
-    color: white;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
-p {
-    line-height: 1.6;
-}
-
-#hobbies p {
-    margin-bottom: 15px;
+.skills-list li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
