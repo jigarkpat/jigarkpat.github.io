@@ -2,8 +2,7 @@
 
 
 
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=1366, maximum-scale=1.0">
-<link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=1614, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 @font-face {
@@ -14,17 +13,17 @@
 }
 
 @font-face {
-  font-family: "VisbyCF-DemiBold";
-  font-style: normal;
-  font-weight: 700;
-  src: url('https://anima-uploads.s3.amazonaws.com/5c7648f2995604000b855b3d/VisbyCF-DemiBold-az.ttf') format("truetype");
-}
-
-@font-face {
   font-family: "VisbyCF-Regular";
   font-style: normal;
   font-weight: 400;
   src: url('https://anima-uploads.s3.amazonaws.com/5c709bfb00f64f000baf32c6/VisbyCF-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "VisbyCF-DemiBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://anima-uploads.s3.amazonaws.com/5c7648f2995604000b855b3d/VisbyCF-DemiBold-az.ttf') format("truetype");
 }
 /* The following line is used to measure usage of this code. You can remove it if you want. */
 @import url("https://px.animaapp.com/66e5509196a1d0fa18d47a54.66e5509296a1d0fa18d47a57.MNAnmaK.hch.png");
@@ -220,21 +219,22 @@ input:focus {
   --silver-chalice: #afafaf;
   --white: #ffffff;
  
-  --font-size-l: 30.9px;
+  --font-size-l: 23px;
   --font-size-m: 21px;
-  --font-size-s: 13px;
-  --font-size-xl: 62px;
-  --font-size-xs: 10px;
-  --font-size-xxl: 100px;
+  --font-size-s: 16px;
+  --font-size-xl: 36px;
+  --font-size-xxl: 57px;
+  --font-size-xxxl: 118px;
+  --font-size-xxxxl: 119px;
  
   --font-family-futura-condensedextrabold: "Futura-CondensedExtraBold", Helvetica;
   --font-family-visbycf-demibold: "VisbyCF-DemiBold", Helvetica;
   --font-family-visbycf-regular: "VisbyCF-Regular", Helvetica;
 }
-.visbycf-demi-bold-white-21px {
+.visbycf-demi-bold-white-23px {
   color: var(--white);
   font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 700;
 }
@@ -247,16 +247,16 @@ input:focus {
   font-weight: 400;
 }
 
-.futura-condensedextra-bold-white-100px {
-  color: var(--white);
-  font-family: var(--font-family-futura-condensedextrabold);
-  font-size: var(--font-size-xxl);
+.visbycf-demi-bold-silver-chalice-21px {
+  color: var(--silver-chalice);
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 700;
 }
 
-.visbycf-demi-bold-silver-chalice-21px {
-  color: var(--silver-chalice);
+.visbycf-demi-bold-white-21px {
+  color: var(--white);
   font-family: var(--font-family-visbycf-demibold);
   font-size: var(--font-size-m);
   font-style: normal;
@@ -266,12 +266,20 @@ input:focus {
 .visbycf-demi-bold-white-10px {
   color: var(--white);
   font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-xs);
+  font-size: 10px;
   font-style: normal;
   font-weight: 700;
 }
 
-.visbycf-regular-normal-bon-jour-13px {
+.futura-condensedextra-bold-white-118px {
+  color: var(--white);
+  font-family: var(--font-family-futura-condensedextrabold);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.visbycf-regular-normal-bon-jour-16px {
   color: var(--bon-jour);
   font-family: var(--font-family-visbycf-regular);
   font-size: var(--font-size-s);
@@ -279,10 +287,10 @@ input:focus {
   font-weight: 400;
 }
 
-.visbycf-demi-bold-white-30-9px {
+.visbycf-demi-bold-white-36px {
   color: var(--white);
   font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 700;
 }
@@ -291,188 +299,137 @@ input:focus {
 }
 
 
-/* screen - artboard-1 */
+/* screen - web-1920-1 */
 
-.artboard-1 {
+.web-1920-1 {
   background-color: var(--white);
-  height: 2739.74px;
+  height: 2606px;
   overflow: hidden;
   overflow-x: hidden;
   position: relative;
-  width: 1366px;
+  width: 1614px;
 }
 
-.artboard-1 .group-8-XSArT0 {
+.web-1920-1 .group-63-HlzXCz {
   background-color: transparent;
-  height: 2740px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 1366px;
-}
-
-.artboard-1 .group-7-n4SBNU {
-  background-color: transparent;
-  height: 100%;
+  height: 2606px;
   left: 0px;
   position: relative;
   top: 0px;
-  width: 100%;
+  width: 1631px;
 }
 
-.artboard-1 .group-6-nlrolw {
-  background-color: transparent;
+.web-1920-1 .rectangle-31-BxHJPN {
+  background-color: #14262b;
   height: 100%;
   left: 0px;
-  overflow: hidden;
-  position: relative;
-  top: 0px;
-  width: 100%;
-}
-
-.artboard-1 .group-5-fVZGhK {
-  background-color: transparent;
-  height: calc(100.00% + 10px);
-  left: -5px;
-  position: relative;
-  top: -5px;
-  width: calc(100.00% + 10px);
-}
-
-.artboard-1 .group-4-GQekr1 {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  position: relative;
-  top: 0px;
-  width: 100%;
-}
-
-.artboard-1 .group-3-h6508J {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  overflow: hidden;
-  position: relative;
-  top: 0px;
-  width: 100%;
-}
-
-.artboard-1 .group-2-8hrT5M {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  position: relative;
-  top: 0px;
-  width: 100%;
-}
-
-.artboard-1 .group-1-5BH8FM {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  object-fit: cover;
   position: absolute;
   top: 0px;
   width: 100%;
 }
 
-.artboard-1 .rectangle-13-XSArT0 {
+.web-1920-1 .rectangle-32-BxHJPN {
   background-color: var(--white);
   border-radius: 15.67px;
-  height: 546px;
-  left: 161px;
+  height: 516px;
+  left: 232px;
   position: absolute;
-  top: 134px;
-  width: 321px;
+  top: 143px;
+  width: 303px;
 }
 
-.artboard-1 .jigarpatel-XSArT0 {
+.web-1920-1 .jigarpatel-BxHJPN {
   background-color: transparent;
   color: #3a3a3a;
   font-family: var(--font-family-futura-condensedextrabold);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
   font-style: normal;
   font-weight: 700;
-  height: auto;
-  left: 245px;
+  height: 142px;
+  left: calc(20.95% - 31px);
   letter-spacing: 0.00px;
-  line-height: 74.4px;
+  line-height: 68px;
   position: absolute;
   text-align: center;
-  top: 396px;
+  top: 391px;
   white-space: nowrap;
-  width: auto;
+  width: 146px;
 }
 
-.artboard-1 .group-9-XSArT0 {
+.web-1920-1 .group-36-BxHJPN {
   background-color: transparent;
-  height: 396px;
-  left: 577px;
+  height: 316px;
   position: absolute;
-  top: 119px;
-  width: 603px;
+  right: 233px;
+  top: 143px;
+  width: 717px;
 }
 
-.artboard-1 .about-K5UMvF {
+.web-1920-1 .about-b7wuR9 {
   background-color: transparent;
-  height: 129px;
-  left: 1px;
-  letter-spacing: 0.00px;
-  line-height: 120.0px;
-  position: absolute;
-  text-align: left;
-  top: 3px;
-  white-space: nowrap;
-  width: 291px;
-}
-
-.artboard-1 .my-name-is-jigar-im-K5UMvF {
-  background-color: transparent;
-  bottom: 1px;
-  height: 263px;
+  height: 152px;
   left: 0px;
   letter-spacing: 0.00px;
+  line-height: 142px;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  white-space: nowrap;
+  width: 343px;
+}
+
+.web-1920-1 .my-name-is-jigar-im-b7wuR9 {
+  background-color: transparent;
+  bottom: 1px;
+  height: 157px;
+  left: 1px;
+  letter-spacing: 0.00px;
   line-height: 25.2px;
+  overflow: hidden;
   position: absolute;
   text-align: left;
   width: calc(100.00% + 2px);
 }
 
-.artboard-1 .group-11-XSArT0 {
+.web-1920-1 .group-38-BxHJPN {
   background-color: transparent;
-  height: 950px;
-  left: 577px;
+  height: 828px;
   position: absolute;
-  top: 570px;
-  width: 581px;
+  right: calc(27.60% - 193px);
+  top: calc(27.56% - 228px);
+  width: 700px;
 }
 
-.artboard-1 .experience-esUwcR {
+.web-1920-1 .title-cTxRBw {
   background-color: transparent;
-  height: 129px;
+  color: var(--white);
+  font-family: var(--font-family-futura-condensedextrabold);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 700;
+  height: 153px;
   left: 0px;
   letter-spacing: 0.00px;
-  line-height: 120.0px;
+  line-height: 143px;
   position: absolute;
   text-align: left;
-  top: 3px;
+  top: 4px;
   white-space: nowrap;
-  width: calc(100.00% - 71px);
+  width: calc(100.00% - 94px);
 }
 
-.artboard-1 .group-10-esUwcR {
+.web-1920-1 .group-37-cTxRBw {
   background-color: transparent;
-  height: calc(100.00% - 131px);
-  left: 1px;
+  bottom: 1px;
+  height: 672px;
+  left: 7px;
   position: absolute;
-  top: 131px;
-  width: 100%;
+  width: calc(100.00% - 7px);
 }
 
-.artboard-1 .asj-remodelingoverse-Mx2qHL {
+.web-1920-1 .asj-remodelingoverse-CL43ID {
   background-color: transparent;
-  height: 192px;
+  height: 170px;
   left: 0px;
   letter-spacing: 0.00px;
   line-height: 25.2px;
@@ -483,41 +440,41 @@ input:focus {
   width: calc(100.00% + 2px);
 }
 
-.artboard-1 .span0-vf7t1D {
+.web-1920-1 .span0-td2OXu {
 }
 
-.artboard-1 .span1-vf7t1D {
+.web-1920-1 .span1-td2OXu {
 }
 
-.artboard-1 .span2-vf7t1D {
+.web-1920-1 .span2-td2OXu {
 }
 
-.artboard-1 .lighthouse-investmen-Mx2qHL {
+.web-1920-1 .lighthouse-investmen-CL43ID {
   background-color: transparent;
-  height: 192px;
+  height: 169px;
   left: 0px;
   letter-spacing: 0.00px;
   line-height: 25.2px;
   overflow: hidden;
   position: absolute;
   text-align: left;
-  top: calc(33.10% - 63px);
+  top: calc(33.05% - 56px);
   width: 100%;
 }
 
-.artboard-1 .span0-1k1wqN {
+.web-1920-1 .span0-zvMLx7 {
 }
 
-.artboard-1 .span1-1k1wqN {
+.web-1920-1 .span1-zvMLx7 {
 }
 
-.artboard-1 .span2-1k1wqN {
+.web-1920-1 .span2-zvMLx7 {
 }
 
-.artboard-1 .blueprint-alphacontr-Mx2qHL {
+.web-1920-1 .blueprint-alphacontr-CL43ID {
   background-color: transparent;
-  bottom: calc(33.46% - 64px);
-  height: 192px;
+  bottom: calc(33.54% - 57px);
+  height: 170px;
   left: 0px;
   letter-spacing: 0.00px;
   line-height: 25.2px;
@@ -527,19 +484,19 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .span0-ScM6El {
+.web-1920-1 .span0-1Pm87U {
 }
 
-.artboard-1 .span1-ScM6El {
+.web-1920-1 .span1-1Pm87U {
 }
 
-.artboard-1 .span2-ScM6El {
+.web-1920-1 .span2-1Pm87U {
 }
 
-.artboard-1 .bapslead-teams-to-cr-Mx2qHL {
+.web-1920-1 .bapslead-teams-to-cr-CL43ID {
   background-color: transparent;
   bottom: 1px;
-  height: 192px;
+  height: 170px;
   left: 0px;
   letter-spacing: 0.00px;
   line-height: 25.2px;
@@ -549,51 +506,60 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .span0-HYxiNh {
+.web-1920-1 .span0-x1xmne {
 }
 
-.artboard-1 .span1-HYxiNh {
+.web-1920-1 .span1-x1xmne {
 }
 
-.artboard-1 .span2-HYxiNh {
+.web-1920-1 .span2-x1xmne {
 }
 
-.artboard-1 .title-XSArT0 {
+.web-1920-1 .group-64-BxHJPN {
   background-color: transparent;
-  height: auto;
-  left: 577px;
+  bottom: calc(40.58% - 146px);
+  height: 359px;
+  position: absolute;
+  right: calc(36.25% - 207px);
+  width: 571px;
+}
+
+.web-1920-1 .skills-IxxQsT {
+  background-color: transparent;
+  height: 152px;
+  left: 0px;
   letter-spacing: 0.00px;
-  line-height: 120.0px;
+  line-height: 142px;
   position: absolute;
   text-align: left;
-  top: 1584px;
+  top: 4px;
   white-space: nowrap;
-  width: auto;
+  width: 318px;
 }
 
-.artboard-1 .adobe-illustrator-XSArT0 {
+.web-1920-1 .adobe-illustrator-IxxQsT {
   background-color: transparent;
-  height: auto;
-  left: 632px;
+  bottom: calc(45.99% - 17px);
+  height: 38px;
+  left: 71px;
   letter-spacing: 0.00px;
-  line-height: 25.2px;
+  line-height: 28px;
   position: absolute;
   text-align: left;
-  top: 1726px;
   white-space: nowrap;
-  width: auto;
+  width: 179px;
 }
 
-.artboard-1 .group-12-XSArT0 {
+.web-1920-1 .group-39-IxxQsT {
   background-color: transparent;
-  height: 37px;
-  left: 582px;
+  bottom: calc(46.40% - 20px);
+  height: 44px;
+  left: 11px;
   position: absolute;
-  top: 1722px;
-  width: 37px;
+  width: 44px;
 }
 
-.artboard-1 .rectangle-14-Kmo2rf {
+.web-1920-1 .rectangle-33-D6eHYL {
   background-color: var(--white);
   border-radius: 9.98px;
   height: 100%;
@@ -603,97 +569,47 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .ai-Kmo2rf {
+.web-1920-1 .ai-D6eHYL {
   background-color: transparent;
   color: #fe9c00;
   font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 700;
-  height: calc(100.00% - 3px);
+  height: calc(100.00% - 6px);
+  left: calc(44.39% - 11px);
   letter-spacing: 0.00px;
-  line-height: 25.2px;
+  line-height: 28px;
   position: absolute;
-  right: calc(43.33% - 10px);
   text-align: center;
-  top: 5px;
-  white-space: nowrap;
-  width: 22px;
-}
-
-.artboard-1 .adobe-photoshop-XSArT0 {
-  background-color: transparent;
-  height: auto;
-  left: 632px;
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  position: absolute;
-  text-align: left;
-  top: 1787px;
-  white-space: nowrap;
-  width: auto;
-}
-
-.artboard-1 .group-13-XSArT0 {
-  background-color: transparent;
-  height: 37px;
-  left: 582px;
-  position: absolute;
-  top: 1783px;
-  width: 37px;
-}
-
-.artboard-1 .rectangle-15-QDoBYK {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.artboard-1 .ps-QDoBYK {
-  background-color: transparent;
-  color: #2ca6ff;
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 700;
-  height: calc(100.00% - 3px);
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  position: absolute;
-  right: calc(42.30% - 10px);
-  text-align: center;
-  top: 5px;
+  top: 6px;
   white-space: nowrap;
   width: 24px;
 }
 
-.artboard-1 .adobe-premier-XSArT0 {
+.web-1920-1 .adobe-photoshop-IxxQsT {
   background-color: transparent;
-  height: auto;
-  left: 632px;
+  bottom: calc(23.24% - 9px);
+  height: 38px;
+  left: 71px;
   letter-spacing: 0.00px;
-  line-height: 25.2px;
+  line-height: 28px;
   position: absolute;
   text-align: left;
-  top: 1848px;
   white-space: nowrap;
-  width: auto;
+  width: 191px;
 }
 
-.artboard-1 .group-14-XSArT0 {
+.web-1920-1 .group-40-IxxQsT {
   background-color: transparent;
-  height: 37px;
-  left: 582px;
+  bottom: calc(23.20% - 10px);
+  height: 44px;
+  left: 11px;
   position: absolute;
-  top: 1845px;
-  width: 37px;
+  width: 44px;
 }
 
-.artboard-1 .rectangle-16-Z6PGoz {
+.web-1920-1 .rectangle-34-2ZHWk0 {
   background-color: var(--white);
   border-radius: 9.98px;
   height: 100%;
@@ -703,155 +619,205 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .pr-Z6PGoz {
+.web-1920-1 .ps-2ZHWk0 {
+  background-color: transparent;
+  color: #2ca6ff;
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  height: 37px;
+  left: calc(44.39% - 11px);
+  letter-spacing: 0.00px;
+  line-height: 27px;
+  position: absolute;
+  text-align: center;
+  top: 6px;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.web-1920-1 .adobe-premier-IxxQsT {
+  background-color: transparent;
+  bottom: 2px;
+  height: 38px;
+  left: 71px;
+  letter-spacing: 0.00px;
+  line-height: 28px;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: 161px;
+}
+
+.web-1920-1 .group-41-IxxQsT {
+  background-color: transparent;
+  bottom: 1px;
+  height: 44px;
+  left: 11px;
+  position: absolute;
+  width: 44px;
+}
+
+.web-1920-1 .rectangle-35-uW68ZG {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.web-1920-1 .pr-uW68ZG {
   background-color: transparent;
   color: #9894f8;
   font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 700;
-  height: calc(100.00% - 3px);
+  height: calc(100.00% - 6px);
   letter-spacing: 0.00px;
-  line-height: 25.2px;
+  line-height: 28px;
   position: absolute;
-  right: calc(43.33% - 10px);
+  right: calc(49.68% - 12px);
   text-align: center;
-  top: 5px;
-  white-space: nowrap;
-  width: 22px;
-}
-
-.artboard-1 .adobe-xd-XSArT0 {
-  background-color: transparent;
-  height: auto;
-  left: 917px;
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  position: absolute;
-  text-align: left;
-  top: 1726px;
-  white-space: nowrap;
-  width: auto;
-}
-
-.artboard-1 .group-15-XSArT0 {
-  background-color: transparent;
-  height: 37px;
-  left: 867px;
-  position: absolute;
-  top: 1722px;
-  width: 37px;
-}
-
-.artboard-1 .rectangle-17-x9SN9H {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.artboard-1 .jira-XSArT0 {
-  background-color: transparent;
-  height: auto;
-  left: 917px;
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  position: absolute;
-  text-align: left;
-  top: 1787px;
-  white-space: nowrap;
-  width: auto;
-}
-
-.artboard-1 .group-16-XSArT0 {
-  background-color: transparent;
-  height: 37px;
-  left: 867px;
-  position: absolute;
-  top: 1845px;
-  width: 37px;
-}
-
-.artboard-1 .rectangle-18-1qnuRY {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.artboard-1 .o1-t-fb-c-1qnuRY {
-  bottom: calc(46.64% - 12px);
-  height: 25px;
-  left: calc(50.00% - 12px);
-  width: 25px;
-}
-
-.artboard-1 .o1-t-fb-c-Klv1M3 {
-  height: 100%;
-  left: 0px;
-  object-fit: cover;
-  top: 0px;
-  width: 100%;
-}
-
-.artboard-1 .microsoft-excel-XSArT0 {
-  background-color: transparent;
-  height: auto;
-  left: 917px;
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  position: absolute;
-  text-align: left;
-  top: 1848px;
-  white-space: nowrap;
-  width: auto;
-}
-
-.artboard-1 .group-17-XSArT0 {
-  background-color: transparent;
-  height: 37px;
-  left: 867px;
-  position: absolute;
-  top: 1783px;
-  width: 37px;
-}
-
-.artboard-1 .rectangle-19-yFkj0b {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.artboard-1 .i-oox-bw-yFkj0b {
-  background-color: transparent;
-  height: calc(100.00% - 11px);
-  left: 6px;
-  object-fit: cover;
-  position: absolute;
   top: 6px;
-  width: calc(100.00% - 11px);
+  white-space: nowrap;
+  width: 24px;
 }
 
-.artboard-1 .group-18-XSArT0 {
+.web-1920-1 .adobe-xd-IxxQsT {
   background-color: transparent;
-  height: 40px;
-  left: 303px;
+  bottom: calc(45.99% - 17px);
+  height: 38px;
+  letter-spacing: 0.00px;
+  line-height: 28px;
   position: absolute;
-  top: 577px;
-  width: 40px;
+  right: 53px;
+  text-align: left;
+  white-space: nowrap;
+  width: 106px;
 }
 
-.artboard-1 .path-1-TJHooX {
+.web-1920-1 .group-42-IxxQsT {
+  background-color: transparent;
+  bottom: calc(46.40% - 20px);
+  height: 44px;
+  position: absolute;
+  right: calc(33.23% - 15px);
+  width: 44px;
+}
+
+.web-1920-1 .rectangle-36-ylC6kh {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.web-1920-1 .jira-IxxQsT {
+  background-color: transparent;
+  bottom: calc(23.24% - 9px);
+  height: 38px;
+  letter-spacing: 0.00px;
+  line-height: 28px;
+  position: absolute;
+  right: calc(22.13% - 9px);
+  text-align: left;
+  white-space: nowrap;
+  width: 42px;
+}
+
+.web-1920-1 .group-43-IxxQsT {
+  background-color: transparent;
+  bottom: 1px;
+  height: 44px;
+  position: absolute;
+  right: calc(33.23% - 15px);
+  width: 44px;
+}
+
+.web-1920-1 .rectangle-37-xNYjL9 {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.web-1920-1 .o1-t-fb-c-xNYjL9 {
+  bottom: calc(46.64% - 14px);
+  height: 30px;
+  left: calc(50.00% - 15px);
+  width: 30px;
+}
+
+.web-1920-1 .o1-t-fb-c-MTU5pi {
+  height: 100%;
+  left: 1px;
+  object-fit: cover;
+  top: 1px;
+  width: 100%;
+}
+
+.web-1920-1 .microsoft-excel-IxxQsT {
+  background-color: transparent;
+  bottom: 2px;
+  height: 38px;
+  letter-spacing: 0.00px;
+  line-height: 28px;
+  position: absolute;
+  right: -2px;
+  text-align: left;
+  white-space: nowrap;
+  width: 161px;
+}
+
+.web-1920-1 .group-44-IxxQsT {
+  background-color: transparent;
+  bottom: calc(23.20% - 10px);
+  height: 44px;
+  position: absolute;
+  right: calc(33.48% - 15px);
+  width: 44px;
+}
+
+.web-1920-1 .rectangle-38-PWlyOh {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.web-1920-1 .i-oox-bw-PWlyOh {
+  background-color: transparent;
+  height: calc(100.00% - 13px);
+  left: 7px;
+  object-fit: cover;
+  position: absolute;
+  top: 7px;
+  width: calc(100.00% - 13px);
+}
+
+.web-1920-1 .group-45-BxHJPN {
+  background-color: transparent;
+  height: 38px;
+  left: calc(22.97% - 9px);
+  position: absolute;
+  top: calc(21.87% - 8px);
+  width: 38px;
+}
+
+.web-1920-1 .path-16-4xsg7U {
   background-color: transparent;
   height: 100%;
   left: 0px;
@@ -861,36 +827,36 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .path-2-TJHooX {
+.web-1920-1 .path-17-4xsg7U {
   background-color: transparent;
-  height: 19px;
+  height: 18px;
   left: calc(50.00% - 9px);
   object-fit: cover;
   position: absolute;
   top: calc(49.99% - 9px);
-  width: 19px;
+  width: 18px;
 }
 
-.artboard-1 .path-3-TJHooX {
+.web-1920-1 .path-18-4xsg7U {
   background-color: transparent;
-  height: 5px;
+  height: 4px;
   object-fit: cover;
   position: absolute;
   right: calc(17.94% - 1px);
   top: calc(17.93% - 1px);
-  width: 5px;
+  width: 4px;
 }
 
-.artboard-1 .group-21-XSArT0 {
+.web-1920-1 .group-48-BxHJPN {
   background-color: transparent;
-  height: 40px;
-  left: 372px;
+  height: 38px;
+  left: calc(27.07% - 10px);
   position: absolute;
-  top: 577px;
-  width: 40px;
+  top: calc(21.87% - 8px);
+  width: 38px;
 }
 
-.artboard-1 .path-4-P6Dx6p {
+.web-1920-1 .path-19-f1ocjK {
   background-color: transparent;
   height: 100%;
   left: 0px;
@@ -900,16 +866,16 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .group-20-P6Dx6p {
+.web-1920-1 .group-47-f1ocjK {
   background-color: transparent;
-  height: 22px;
+  height: 21px;
   position: absolute;
-  right: calc(50.00% - 12px);
-  top: calc(50.00% - 11px);
-  width: 23px;
+  right: calc(50.00% - 11px);
+  top: calc(50.00% - 10px);
+  width: 22px;
 }
 
-.artboard-1 .group-19-RHYb5C {
+.web-1920-1 .group-46-FkuyNU {
   background-color: transparent;
   height: 100%;
   left: 0px;
@@ -918,36 +884,36 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .path-5-bPNxAw {
+.web-1920-1 .path-20-0pfXYT {
   background-color: transparent;
   height: 100%;
   left: 0px;
   object-fit: cover;
   position: absolute;
-  top: 1px;
+  top: 0px;
   width: 5px;
 }
 
-.artboard-1 .path-6-bPNxAw {
+.web-1920-1 .path-21-0pfXYT {
   background-color: transparent;
-  bottom: 1px;
-  height: 17px;
+  bottom: 0px;
+  height: 16px;
   object-fit: cover;
   position: absolute;
   right: 0px;
-  width: 16px;
+  width: 15px;
 }
 
-.artboard-1 .group-22-XSArT0 {
+.web-1920-1 .group-49-BxHJPN {
   background-color: transparent;
-  height: 40px;
-  left: 234px;
+  height: 38px;
+  left: calc(18.86% - 7px);
   position: absolute;
-  top: 577px;
-  width: 40px;
+  top: calc(21.87% - 8px);
+  width: 38px;
 }
 
-.artboard-1 .path-7-k9Daai {
+.web-1920-1 .path-22-TH4gWp {
   background-color: transparent;
   height: 100%;
   left: 0px;
@@ -957,7 +923,7 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .path-8-k9Daai {
+.web-1920-1 .path-23-TH4gWp {
   background-color: transparent;
   height: 14px;
   left: 1px;
@@ -967,86 +933,86 @@ input:focus {
   width: calc(100.00% - 2px);
 }
 
-.artboard-1 .line-1-k9Daai {
+.web-1920-1 .line-3-TH4gWp {
   background-color: transparent;
-  bottom: calc(33.76% - 4px);
-  height: 12px;
+  bottom: calc(33.70% - 4px);
+  height: 11px;
   object-fit: cover;
   position: absolute;
   right: 1px;
   width: 13px;
 }
 
-.artboard-1 .line-2-k9Daai {
+.web-1920-1 .line-4-TH4gWp {
   background-color: transparent;
-  bottom: calc(33.77% - 4px);
-  height: 12px;
+  bottom: calc(33.70% - 4px);
+  height: 11px;
   left: 1px;
   object-fit: cover;
   position: absolute;
-  width: 14px;
+  width: 13px;
 }
 
-.artboard-1 .ellipse-1-XSArT0 {
+.web-1920-1 .ellipse-2-BxHJPN {
   background-color: #a0d1de;
-  border-radius: 97.54px;
-  height: 195px;
-  left: 223px;
+  border-radius: 92.16px;
+  height: 184px;
+  left: calc(20.11% - 37px);
   position: absolute;
-  top: 166px;
-  width: 195px;
+  top: 173px;
+  width: 184px;
 }
 
-.artboard-1 .group-35-XSArT0 {
+.web-1920-1 .group-62-BxHJPN {
   background-color: transparent;
-  height: 568px;
-  left: 571px;
+  bottom: 178px;
+  height: 678px;
   position: absolute;
-  top: 1969px;
-  width: 587px;
+  right: calc(27.04% - 191px);
+  width: 707px;
 }
 
-.artboard-1 .group-23-oUHlAL {
+.web-1920-1 .group-50-YZqb2E {
   background-color: transparent;
-  height: 127px;
-  left: 6px;
+  height: 150px;
+  left: 0px;
   position: absolute;
   top: 0px;
-  width: 368px;
+  width: 434px;
 }
 
-.artboard-1 .hobbies-7Qybov {
+.web-1920-1 .hobbies-FOZqqx {
   background-color: transparent;
   height: calc(100.00% + 2px);
   left: 0px;
   letter-spacing: 0.00px;
-  line-height: 120.0px;
+  line-height: 142px;
   position: absolute;
   text-align: left;
-  top: 3px;
+  top: 4px;
   white-space: nowrap;
   width: calc(100.00% + 2px);
 }
 
-.artboard-1 .group-34-oUHlAL {
+.web-1920-1 .group-61-YZqb2E {
   background-color: transparent;
-  height: calc(100.00% - 141px);
-  left: 0px;
+  bottom: 1px;
+  height: 509px;
+  left: 7px;
   position: absolute;
-  top: 141px;
-  width: 100%;
+  width: calc(100.00% - 7px);
 }
 
-.artboard-1 .group-27-WcXqoC {
+.web-1920-1 .group-54-Bx4Jbh {
   background-color: transparent;
-  height: 127px;
+  height: 152px;
   left: 0px;
   position: absolute;
   top: 0px;
   width: 100%;
 }
 
-.artboard-1 .rectangle-20-m5F7Mu {
+.web-1920-1 .rectangle-39-1b4VeH {
   background-color: #207289;
   border-radius: 22.64px;
   height: 100%;
@@ -1056,16 +1022,16 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .group-25-m5F7Mu {
+.web-1920-1 .group-52-1b4VeH {
   background-color: transparent;
-  height: 62px;
-  left: 31px;
+  height: 74px;
+  left: 37px;
   position: absolute;
-  top: calc(50.00% - 31px);
-  width: 69px;
+  top: calc(50.00% - 37px);
+  width: 82px;
 }
 
-.artboard-1 .group-24-uEU0KZ {
+.web-1920-1 .group-51-1YW1dc {
   background-color: transparent;
   height: 100%;
   left: 0px;
@@ -1074,59 +1040,59 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .path-9-EOBQkt {
+.web-1920-1 .path-24-f9ZnZF {
   background-color: transparent;
-  height: calc(100.00% - 9px);
-  left: 0px;
+  height: calc(100.00% - 11px);
+  left: 1px;
   object-fit: cover;
   position: absolute;
-  top: 9px;
+  top: 11px;
   width: 100%;
 }
 
-.artboard-1 .path-10-EOBQkt {
+.web-1920-1 .path-25-f9ZnZF {
   background-color: transparent;
-  height: 5px;
+  height: 6px;
   left: 3px;
   object-fit: cover;
   position: absolute;
-  top: 0px;
-  width: 19px;
+  top: 1px;
+  width: 23px;
 }
 
-.artboard-1 .path-11-EOBQkt {
+.web-1920-1 .path-26-f9ZnZF {
   background-color: transparent;
-  height: 5px;
+  height: 6px;
   object-fit: cover;
   position: absolute;
   right: 1px;
   top: calc(33.31% - 2px);
-  width: 19px;
+  width: 23px;
 }
 
-.artboard-1 .path-12-EOBQkt {
+.web-1920-1 .path-27-f9ZnZF {
   background-color: transparent;
-  height: 5px;
+  height: 6px;
   object-fit: cover;
   position: absolute;
-  right: 8px;
-  top: 6px;
-  width: 19px;
+  right: 9px;
+  top: 7px;
+  width: 23px;
 }
 
-.artboard-1 .group-26-m5F7Mu {
+.web-1920-1 .group-53-1b4VeH {
   background-color: transparent;
-  height: calc(100.00% - 23px);
+  height: calc(100.00% - 27px);
   position: absolute;
-  right: 25px;
-  top: 11px;
-  width: 432px;
+  right: 30px;
+  top: 13px;
+  width: 515px;
 }
 
-.artboard-1 .i-love-to-travel-and-cf7QqA {
+.web-1920-1 .i-love-to-travel-and-x5z06G {
   background-color: transparent;
-  bottom: -1px;
-  height: 60px;
+  bottom: -2px;
+  height: 71px;
   left: 0px;
   letter-spacing: 0.00px;
   line-height: 15.6px;
@@ -1135,29 +1101,29 @@ input:focus {
   width: calc(100.00% + 2px);
 }
 
-.artboard-1 .traveling-cf7QqA {
+.web-1920-1 .traveling-x5z06G {
   background-color: transparent;
-  height: 50px;
+  height: 58px;
   left: 1px;
   letter-spacing: 0.00px;
-  line-height: 37.0px;
+  line-height: 43px;
   position: absolute;
   text-align: left;
-  top: 5px;
+  top: 6px;
   white-space: nowrap;
-  width: 135px;
+  width: 157px;
 }
 
-.artboard-1 .group-31-WcXqoC {
+.web-1920-1 .group-58-Bx4Jbh {
   background-color: transparent;
-  height: 127px;
+  height: 152px;
   left: 0px;
   position: absolute;
-  top: calc(50.00% - 64px);
+  top: calc(50.00% - 76px);
   width: 100%;
 }
 
-.artboard-1 .rectangle-21-i29ovr {
+.web-1920-1 .rectangle-40-3HW4Nx {
   background-color: #ad6959;
   border-radius: 22.64px;
   height: 100%;
@@ -1167,19 +1133,19 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .group-28-i29ovr {
+.web-1920-1 .group-55-3HW4Nx {
   background-color: transparent;
-  height: calc(100.00% - 23px);
+  height: calc(100.00% - 27px);
   position: absolute;
-  right: 25px;
-  top: 11px;
-  width: 432px;
+  right: 30px;
+  top: 13px;
+  width: 515px;
 }
 
-.artboard-1 .im-a-huge-sports-fan-vxP8Wm {
+.web-1920-1 .im-a-huge-sports-fan-25xHKo {
   background-color: transparent;
-  bottom: -1px;
-  height: 60px;
+  bottom: -2px;
+  height: 71px;
   left: 0px;
   letter-spacing: 0.00px;
   line-height: 15.6px;
@@ -1188,29 +1154,29 @@ input:focus {
   width: calc(100.00% + 2px);
 }
 
-.artboard-1 .sports-vxP8Wm {
+.web-1920-1 .sports-25xHKo {
   background-color: transparent;
-  height: 50px;
+  height: 58px;
   left: 1px;
   letter-spacing: 0.00px;
-  line-height: 37.0px;
+  line-height: 43px;
   position: absolute;
   text-align: left;
-  top: 5px;
+  top: 6px;
   white-space: nowrap;
-  width: 93px;
+  width: 108px;
 }
 
-.artboard-1 .group-30-i29ovr {
+.web-1920-1 .group-57-3HW4Nx {
   background-color: transparent;
-  bottom: calc(50.00% - 36px);
-  height: 72px;
-  left: 41px;
+  bottom: calc(50.00% - 43px);
+  height: 86px;
+  left: 49px;
   position: absolute;
-  width: 49px;
+  width: 59px;
 }
 
-.artboard-1 .group-29-Mg5Gdp {
+.web-1920-1 .group-56-QbYk1E {
   background-color: transparent;
   height: 100%;
   left: 0px;
@@ -1219,36 +1185,36 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .path-13-xi0zu3 {
+.web-1920-1 .path-28-W1dXW5 {
   background-color: transparent;
   bottom: 0px;
-  height: 34px;
-  left: 0px;
+  height: 40px;
+  left: 1px;
   object-fit: cover;
   position: absolute;
   width: calc(100.00% - 3px);
 }
 
-.artboard-1 .path-14-xi0zu3 {
+.web-1920-1 .path-29-W1dXW5 {
   background-color: transparent;
-  height: 35px;
+  height: 42px;
   object-fit: cover;
   position: absolute;
-  right: 0px;
+  right: 1px;
   top: 0px;
-  width: 35px;
+  width: 42px;
 }
 
-.artboard-1 .group-33-WcXqoC {
+.web-1920-1 .group-60-Bx4Jbh {
   background-color: transparent;
-  bottom: 0px;
-  height: 127px;
+  bottom: 1px;
+  height: 152px;
   left: 0px;
   position: absolute;
   width: 100%;
 }
 
-.artboard-1 .rectangle-22-Yffl8A {
+.web-1920-1 .rectangle-41-4bgcos {
   background-color: #733953;
   border-radius: 22.64px;
   height: 100%;
@@ -1258,19 +1224,19 @@ input:focus {
   width: 100%;
 }
 
-.artboard-1 .group-32-Yffl8A {
+.web-1920-1 .group-59-4bgcos {
   background-color: transparent;
-  height: calc(100.00% - 23px);
+  height: calc(100.00% - 27px);
   position: absolute;
-  right: 25px;
-  top: 11px;
-  width: 432px;
+  right: 30px;
+  top: 13px;
+  width: 515px;
 }
 
-.artboard-1 .i-enjoy-reading-and-spyTek {
+.web-1920-1 .i-enjoy-reading-and-1hD3RT {
   background-color: transparent;
-  bottom: -1px;
-  height: 60px;
+  bottom: -2px;
+  height: 71px;
   left: 0px;
   letter-spacing: 0.00px;
   line-height: 15.6px;
@@ -1279,49 +1245,154 @@ input:focus {
   width: calc(100.00% + 2px);
 }
 
-.artboard-1 .reading-spyTek {
+.web-1920-1 .reading-1hD3RT {
   background-color: transparent;
-  height: 50px;
+  height: 58px;
   left: 1px;
   letter-spacing: 0.00px;
-  line-height: 37.0px;
+  line-height: 43px;
   position: absolute;
   text-align: left;
-  top: 5px;
+  top: 6px;
   white-space: nowrap;
-  width: 120px;
+  width: 140px;
 }
 
-.artboard-1 .path-15-Yffl8A {
+.web-1920-1 .path-30-4bgcos {
   background-color: transparent;
-  bottom: calc(50.00% - 26px);
-  height: 52px;
-  left: 38px;
+  bottom: calc(50.00% - 31px);
+  height: 62px;
+  left: 45px;
   object-fit: cover;
   position: absolute;
-  width: 57px;
+  width: 68px;
 }
 
-.artboard-1 .o1-t-fb-c {
+.web-1920-1 .o1-t-fb-c {
   background-color: transparent;
   position: absolute;
 }
 
-.artboard-1 .xd {
+.web-1920-1 .xd {
   background-color: transparent;
   color: #f75fee;
   font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 700;
-  height: calc(100.00% - 3px);
-  left: 5px;
+  height: calc(100.00% - 6px);
+  left: 7px;
   letter-spacing: 0.00px;
-  line-height: 25.2px;
+  line-height: 28px;
   position: absolute;
   text-align: center;
-  top: 5px;
+  top: 6px;
   white-space: nowrap;
-  width: calc(100.00% - 9px);
+  width: 30px;
 }
-</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="artboard-1"><div class="container-center-horizontal"><div class="artboard-1 screen " data-id="377b22b7-944f-4107-bbaf-d384ab2ec014"><div class="group-8-XSArT0" data-id="c7f49ae6-b3a7-4c5f-979b-0feb3859193d"><div class="group-7-n4SBNU" data-id="0a24a59a-7e44-442c-9950-3914bb095903"><div class="group-6-nlrolw" data-id="57ad322c-58e6-41df-8c36-cf9c40289d68"><div class="group-5-fVZGhK" data-id="653b0109-2edc-41da-8872-52c45d616df6"><div class="group-4-GQekr1" data-id="e7150e40-0157-414b-8608-74d642ca3059"><div class="group-3-h6508J" data-id="84fe5d8a-eb59-4292-ad55-a63481f9505a"><div class="group-2-8hrT5M" data-id="29879b6c-c219-4224-a981-d39f3dde6579"><img class="group-1-5BH8FM" data-id="8162d442-90bb-4e0c-a87c-f0e96ef5e63b" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/group-1@1x.png" alt="Group 1"></div></div></div></div></div></div></div><div class="rectangle-13-XSArT0" data-id="1c9d18d6-988e-4730-a7a2-9d6c995118d0"></div><div class="jigarpatel-XSArT0" data-id="9f2d42e0-a599-4317-89b8-df477a7545e8">JIGAR<br>PATEL</div><div class="group-9-XSArT0" data-id="e0772a00-de6d-464e-8538-56d263099ae5"><div class="about-K5UMvF futura-condensedextra-bold-white-100px" data-id="f7d48a6b-c357-4d7d-9c78-70d877084d11">ABOUT</div><p class="my-name-is-jigar-im-K5UMvF visbycf-regular-normal-silver-chalice-21px" data-id="4edd9f99-34d3-405a-8b84-5bf70a5e169c">My name is Jigar. I&#39;m a project manager with a focus on leading teams and delivering successful projects. From managing property renovations to working on large-scale initiatives for non-profits, I make sure projects run smoothly, on time, and within budget.<br><br>I’ve worked across different industries, always looking for ways to improve processes and get the best results for the people I work with.<br></p></div><div class="group-11-XSArT0" data-id="69b8d80d-7f10-4743-8a67-9faefb5350c4"><div class="experience-esUwcR futura-condensedextra-bold-white-100px" data-id="4ebd3f92-0c06-48bc-bd5e-bb2c5c6c82e8">EXPERIENCE</div><div class="group-10-esUwcR" data-id="b2187ee0-e9d4-4b37-8c2e-3768d9b67f76"><p class="asj-remodelingoverse-Mx2qHL visbycf-demi-bold-silver-chalice-21px" data-id="44838ec8-d550-4148-8a20-1281bd3918fe"><span class="span0-vf7t1D visbycf-demi-bold-white-21px">ASJ Remodeling<br></span><span class="span1-vf7t1D visbycf-demi-bold-white-10px"><br></span><span class="span2-vf7t1D visbycf-regular-normal-silver-chalice-21px">Oversee renovations for 100+ properties, helping the business thrive while making sure everything stays on schedule and within budget.<br><br>February ‘21 - Present<br></span></p><p class="lighthouse-investmen-Mx2qHL visbycf-demi-bold-silver-chalice-21px" data-id="aae9f308-6f1a-496d-8555-b07095bc3843"><span class="span0-1k1wqN visbycf-demi-bold-white-21px">Lighthouse Investments<br></span><span class="span1-1k1wqN visbycf-demi-bold-white-10px"><br></span><span class="span2-1k1wqN visbycf-regular-normal-silver-chalice-21px">Managed a portfolio of 35 hotels, using data dashboards to boost revenue and striking deals with vendors to save some cash.<br><br>January ‘20 - December ’20<br></span></p><p class="blueprint-alphacontr-Mx2qHL visbycf-demi-bold-silver-chalice-21px" data-id="7a4dffe3-c46e-4940-84b8-5984762a14eb"><span class="span0-ScM6El visbycf-demi-bold-white-21px">Blueprint Alpha<br></span><span class="span1-ScM6El visbycf-demi-bold-white-10px"><br></span><span class="span2-ScM6El visbycf-regular-normal-silver-chalice-21px">Contributed to an object detection tool as a Software Engineer Intern, making the system work better and speeding up database results.<br><br>May ‘17 - July ’21<br></span></p><p class="bapslead-teams-to-cr-Mx2qHL visbycf-demi-bold-silver-chalice-21px" data-id="c9f602a0-2ae0-4bd7-b069-b33bc10e21c4"><span class="span0-HYxiNh visbycf-demi-bold-white-21px">B.A.P.S<br></span><span class="span1-HYxiNh visbycf-demi-bold-white-10px"><br></span><span class="span2-HYxiNh visbycf-regular-normal-silver-chalice-21px">Lead teams to create content, run multimedia projects, and organize events that uplift the community and foster spiritual growth.<br><br>August ‘14 - Present<br></span></p></div></div><h1 class="title-XSArT0 futura-condensedextra-bold-white-100px" data-id="319c24b6-d4f2-4d0e-909b-1d7db11184fd">SKILLS</h1><div class="adobe-illustrator-XSArT0 visbycf-demi-bold-white-21px" data-id="e0145686-c1e8-4c28-80b4-37d996a5b930">Adobe Illustrator</div><div class="group-12-XSArT0" data-id="4a62b1f1-865f-4964-9483-62582f1461e4"><div class="rectangle-14-Kmo2rf" data-id="fa9d487c-69bf-4111-8b51-716652412ae7"></div><div class="ai-Kmo2rf" data-id="7fd237e4-77ef-4f12-8bd9-7b45f26f9dbc">Ai</div></div><div class="adobe-photoshop-XSArT0 visbycf-demi-bold-white-21px" data-id="c22a9b8f-e9c2-4042-a2eb-dd15394badba">Adobe Photoshop</div><div class="group-13-XSArT0" data-id="81905efa-d205-4a47-9c24-3cee737dcf1f"><div class="rectangle-15-QDoBYK" data-id="b9e1353e-e2d8-4f7a-8d07-42c2663b51d8"></div><div class="ps-QDoBYK" data-id="d6097434-c409-4869-ae80-ed3e5b8635b5">Ps</div></div><div class="adobe-premier-XSArT0 visbycf-demi-bold-white-21px" data-id="6b216107-7c51-497b-990a-24a8526d2f3c">Adobe Premier</div><div class="group-14-XSArT0" data-id="637ff8c9-3cb8-4f1e-9025-c69f5588e1a8"><div class="rectangle-16-Z6PGoz" data-id="5e1c2ae3-f991-4e2f-b6eb-064a931f450e"></div><div class="pr-Z6PGoz" data-id="dc3ef4c9-9da6-48c8-ac7d-a44a86aef4ca">Pr</div></div><div class="adobe-xd-XSArT0 visbycf-demi-bold-white-21px" data-id="b57ad5f8-798c-4922-88dc-6af9d3437dd0">Adobe Xd</div><div class="group-15-XSArT0" data-id="ce1a2420-cec3-45e6-baab-2e60fb7477d4"><div class="rectangle-17-x9SN9H" data-id="f3759c38-8470-4872-8a9c-a82e45726c03"></div><div class="xd" data-id="9eca3cd9-e68c-428f-a1ce-4e6724bcb58e">Xd</div></div><div class="jira-XSArT0 visbycf-demi-bold-white-21px" data-id="7ecdf3af-5f40-4a40-b436-6b2a220043dd">Jira</div><div class="group-16-XSArT0" data-id="0a407685-1edd-47e8-aeb5-c63b8f9b7a61"><div class="rectangle-18-1qnuRY" data-id="0f39cbce-ff2d-4a06-825d-069bd1ea5b15"></div><div class="o1-t-fb-c-1qnuRY o1-t-fb-c" data-id="0a5410cb-7ba7-4828-b835-9bdad9f79e63"><img class="o1-t-fb-c-Klv1M3 o1-t-fb-c" data-id="95b4c347-d26c-4d85-bef5-7b2e9bd35631" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/o1tfbc@1x.png" alt="o1TFbC"></div></div><div class="microsoft-excel-XSArT0 visbycf-demi-bold-white-21px" data-id="5674e306-e6bd-41fe-9765-95411d446e3c">Microsoft Excel</div><div class="group-17-XSArT0" data-id="c7fa5780-b18a-427f-afb0-e7ce77837e01"><div class="rectangle-19-yFkj0b" data-id="f02d1b51-3297-454e-9ca5-436c1d8b78fc"></div><div class="xd" data-id="6937d273-a4a2-4af3-ba13-f721de6edbb5">Xd</div><img class="i-oox-bw-yFkj0b" data-id="dc290e05-9cc6-43c6-9b4a-b2e016e6ed5a" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/iooxbw@1x.png" alt="iOoxBW"></div><div class="group-18-XSArT0" data-id="38ef8d23-6584-41ae-a979-83c8a851f63a"><img class="path-1-TJHooX" data-id="ada0c18e-c582-4d31-8184-65491b7f80a6" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-1@1x.png" alt="Path 1"><img class="path-2-TJHooX" data-id="0ff5784e-5acf-4e51-b7ef-cee97ba47895" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-2@1x.png" alt="Path 2"><img class="path-3-TJHooX" data-id="4c215b0f-68a2-43b9-8b8f-146d34d32eea" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-3@1x.png" alt="Path 3"></div><div class="group-21-XSArT0" data-id="24d843ed-e6b1-40cf-905f-accb18e0d54e"><img class="path-4-P6Dx6p" data-id="7ddabf20-49a7-425e-a561-84130eccd6a8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-4@1x.png" alt="Path 4"><div class="group-20-P6Dx6p" data-id="c0c16347-bb19-4154-a4cc-8ea80010eb73"><div class="group-19-RHYb5C" data-id="45e2b43f-0137-48b1-ba89-b5072a22bf23"><img class="path-5-bPNxAw" data-id="6b510bf8-c22a-4ebc-a8c1-78ab59144759" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-5@1x.png" alt="Path 5"><img class="path-6-bPNxAw" data-id="386089ea-0da7-4e07-bebd-4f764d85f985" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-6@1x.png" alt="Path 6"></div></div></div><div class="group-22-XSArT0" data-id="491d92b7-a362-4295-805e-991dfdd77a7e"><img class="path-7-k9Daai" data-id="07aef4c8-2b7e-4cde-9fc4-22a2d03d5750" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-1@1x.png" alt="Path 7"><img class="path-8-k9Daai" data-id="2f477c5d-a763-417a-9149-3dafe5be2495" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-8@1x.png" alt="Path 8"><img class="line-1-k9Daai" data-id="d7e1f2b3-2eaf-49cf-be77-db816fe454f5" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/line-1@1x.png" alt="Line 1"><img class="line-2-k9Daai" data-id="40714214-acba-4459-aa07-790788465abc" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/line-2@1x.png" alt="Line 2"></div><div class="ellipse-1-XSArT0" data-id="f79497a2-f19d-4d9f-b3f4-c9139f46b4ab"></div><div class="group-35-XSArT0" data-id="df33f409-f210-4bf0-b6d2-22be9f4fd755"><div class="group-23-oUHlAL" data-id="1284e66e-6c55-48f0-a8ed-d2286f365ac3"><div class="hobbies-7Qybov futura-condensedextra-bold-white-100px" data-id="a6bf4432-e2eb-48a5-b1b3-759f43a5a624">HOBBIES</div></div><div class="group-34-oUHlAL" data-id="240e2612-b5b4-4c27-a515-c809f42644d4"><div class="group-27-WcXqoC" data-id="24e15226-a7c6-4c08-96db-aea6d8942972"><div class="rectangle-20-m5F7Mu" data-id="b029753d-94f5-447e-99ec-263d378ab44a"></div><div class="group-25-m5F7Mu" data-id="b754deba-fd67-4d7d-80f2-b37cfc228ebd"><div class="group-24-uEU0KZ" data-id="6a719d3f-0092-4c1d-a2c9-dd2a750853c6"><img class="path-9-EOBQkt" data-id="a836adda-6e21-4068-aa27-3f9ea67e28e1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-9@1x.png" alt="Path 9"><img class="path-10-EOBQkt" data-id="2241dda1-8fed-4528-a420-aec300eb23b0" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-10@1x.png" alt="Path 10"><img class="path-11-EOBQkt" data-id="0478cffc-ee19-446a-bc05-f88a98396412" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-11@1x.png" alt="Path 11"><img class="path-12-EOBQkt" data-id="8a4b9134-dc8d-41da-906e-a87b83233f7c" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-12@1x.png" alt="Path 12"></div></div><div class="group-26-m5F7Mu" data-id="40b64715-4d2f-48d6-821b-4f3cc857ad78"><p class="i-love-to-travel-and-cf7QqA visbycf-regular-normal-bon-jour-13px" data-id="c008cec1-954c-45e5-9dfb-7316f507c5ed">I love to travel, and my favorite trip was a week-long hiking trip in Colorado, where I explored beautiful trails and took in some amazing sights.</p><div class="traveling-cf7QqA visbycf-demi-bold-white-30-9px" data-id="b364c528-9c8a-49c5-8af2-5ac652ac1e0b">Traveling</div></div></div><div class="group-31-WcXqoC" data-id="a95cb01f-c381-477a-8b04-dc28a50ae554"><div class="rectangle-21-i29ovr" data-id="e4d361f1-25c1-4d7c-9d47-479a5430709e"></div><div class="group-28-i29ovr" data-id="13b3484f-0bbb-4e7f-942b-b7b580cbac56"><p class="im-a-huge-sports-fan-vxP8Wm visbycf-regular-normal-bon-jour-13px" data-id="abb5ee7b-6f89-4db3-b50e-41f61c167d13">I’m a huge sports fan and love getting in on the action! Whether I’m cheering for my favorite teams on TV or playing a pickup game with friends, I’m always ready for anything!</p><div class="sports-vxP8Wm visbycf-demi-bold-white-30-9px" data-id="456374d3-1a91-41f4-b9ba-871b18795801">Sports</div></div><div class="group-30-i29ovr" data-id="101a7dd6-11f0-4992-ac6e-5ef85c06918b"><div class="group-29-Mg5Gdp" data-id="7070183b-2f58-44f0-83f3-9cd7f8cea6da"><img class="path-13-xi0zu3" data-id="9981d19f-1d14-4615-a1cf-ed84e60b65ca" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-13@1x.png" alt="Path 13"><img class="path-14-xi0zu3" data-id="ad2cbf22-c963-47d8-982a-22b12acad827" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-14@1x.png" alt="Path 14"></div></div></div><div class="group-33-WcXqoC" data-id="e760561b-cec4-434d-85a3-d61da290bec1"><div class="rectangle-22-Yffl8A" data-id="7115ad2e-93e7-4a82-b43b-c03f43ee001d"></div><div class="group-32-Yffl8A" data-id="0a7d532c-0b18-426d-b333-20da12fc8559"><p class="i-enjoy-reading-and-spyTek visbycf-regular-normal-bon-jour-13px" data-id="2a147f3d-4974-4a27-a304-2662008d4313">I enjoy reading, and one of my recent favorites is &#34;The Midnight Library&#34; by Matt Haig. It really made me think about the choices we make in life and the possibilities that come with each decision.</p><div class="reading-spyTek visbycf-demi-bold-white-30-9px" data-id="81dbd133-6167-4ea9-850d-b5a18d186c36">Reading</div></div><img class="path-15-Yffl8A" data-id="7b1cb22e-fba4-421b-96bf-be487d1c967e" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-15@1x.png" alt="Path 15"></div></div></div></div></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
+</style></head>
+<body style="margin: 0;background: #ffffff;">
+  <input type="hidden" id="anPageName" name="page" value="web-1920-1">
+  <div class="container-center-horizontal">
+     <div class="web-1920-1 screen " data-id="a2cd424c-5658-490f-ac66-a95c036a1bac">
+        <div class="group-63-HlzXCz" data-id="319a299d-9798-4e26-adac-51839ebfbcba">
+           <div class="rectangle-31-BxHJPN" data-id="880ea0c7-bba1-459f-af89-f7a298cb3143"></div>
+           <div class="rectangle-32-BxHJPN" data-id="8606fe1e-c437-4ef3-bb10-e2e0843e85c9"></div>
+           <div class="jigarpatel-BxHJPN" data-id="2e96b589-7cec-4d08-a220-380f6e7d21cc">JIGAR<br>PATEL</div>
+           <div class="group-36-BxHJPN" data-id="abe5aafd-89f5-44b7-98a0-5c60cd9c1df3">
+              <div class="about-b7wuR9 futura-condensedextra-bold-white-118px" data-id="d5788e0a-b63c-433b-905e-f03ecbe8b225">ABOUT</div>
+              <p class="my-name-is-jigar-im-b7wuR9 visbycf-regular-normal-silver-chalice-21px" data-id="08ebef99-313b-42a6-8052-aff799c3a374">My name is Jigar. I&#39;m a project manager with a focus on leading teams and delivering successful projects. From managing property renovations to working on large-scale initiatives for non-profits, I make sure projects run smoothly, on time, and within budget.<br><br>I’ve worked across different industries, always looking for ways to improve processes and get the best results for the people I work with.<br></p>
+           </div>
+           <div class="group-38-BxHJPN" data-id="f8d739de-1f20-4bd8-9c7a-c86eb28bbfc1">
+              <h1 class="title-cTxRBw" data-id="c1d22636-4c8b-46a7-8cce-6bacc446c2bf">EXPERIENCE</h1>
+              <div class="group-37-cTxRBw" data-id="4ae16492-084c-4abc-80ac-656d65abc280">
+                 <p class="asj-remodelingoverse-CL43ID visbycf-demi-bold-silver-chalice-21px" data-id="4ec440d4-73be-4b69-aafb-76a37a70b20a"><span class="span0-td2OXu visbycf-demi-bold-white-21px">ASJ Remodeling<br></span><span class="span1-td2OXu visbycf-demi-bold-white-10px"><br></span><span class="span2-td2OXu visbycf-regular-normal-silver-chalice-21px">Oversee renovations for 100+ properties, helping the business thrive while making sure everything stays on schedule and within budget.<br><br>February ‘21 - Present<br></span></p>
+                 <p class="lighthouse-investmen-CL43ID visbycf-demi-bold-silver-chalice-21px" data-id="20073c85-44ae-4774-9891-cc15e7864ff5"><span class="span0-zvMLx7 visbycf-demi-bold-white-21px">Lighthouse Investments<br></span><span class="span1-zvMLx7 visbycf-demi-bold-white-10px"><br></span><span class="span2-zvMLx7 visbycf-regular-normal-silver-chalice-21px">Managed a portfolio of 35 hotels, using data dashboards to boost revenue and striking deals with vendors to save some cash.<br><br>January ‘20 - December ’20<br></span></p>
+                 <p class="blueprint-alphacontr-CL43ID visbycf-demi-bold-silver-chalice-21px" data-id="c0066386-2dda-4278-a84c-5ebda416a004"><span class="span0-1Pm87U visbycf-demi-bold-white-21px">Blueprint Alpha<br></span><span class="span1-1Pm87U visbycf-demi-bold-white-10px"><br></span><span class="span2-1Pm87U visbycf-regular-normal-silver-chalice-21px">Contributed to an object detection tool as a Software Engineer Intern, making the system work better and speeding up database results.<br><br>May ‘17 - July ’21<br></span></p>
+                 <p class="bapslead-teams-to-cr-CL43ID visbycf-demi-bold-silver-chalice-21px" data-id="5739e5ca-3389-4060-bf5f-230f69cf2138"><span class="span0-x1xmne visbycf-demi-bold-white-21px">B.A.P.S<br></span><span class="span1-x1xmne visbycf-demi-bold-white-10px"><br></span><span class="span2-x1xmne visbycf-regular-normal-silver-chalice-21px">Lead teams to create content, run multimedia projects, and organize events that uplift the community and foster spiritual growth.<br><br>August ‘14 - Present<br></span></p>
+              </div>
+           </div>
+           <div class="group-64-BxHJPN" data-id="52137bbd-6f2f-4f30-a93c-d820f6039340">
+              <div class="skills-IxxQsT futura-condensedextra-bold-white-118px" data-id="7cb00618-0f13-4b1a-87ed-31e2781fe64d">SKILLS</div>
+              <div class="adobe-illustrator-IxxQsT visbycf-demi-bold-white-23px" data-id="cd4fbca2-4937-454e-94fb-a253c243ba11">Adobe Illustrator</div>
+              <div class="group-39-IxxQsT" data-id="56a18e76-7969-4f2d-9e96-a294f3a3eef7">
+                 <div class="rectangle-33-D6eHYL" data-id="5c1fbaab-5e6e-4a72-831b-ca99e70efa27"></div>
+                 <div class="ai-D6eHYL" data-id="7f948a89-0559-4123-b86c-084749c35125">Ai</div>
+              </div>
+              <div class="adobe-photoshop-IxxQsT visbycf-demi-bold-white-23px" data-id="7e176e21-ffc0-4c19-b539-527f443bd27c">Adobe Photoshop</div>
+              <div class="group-40-IxxQsT" data-id="14654c48-2b42-41b8-9b64-67d3394ae74c">
+                 <div class="rectangle-34-2ZHWk0" data-id="3b7d6716-9fab-4409-9eac-f25d91dc8c43"></div>
+                 <div class="ps-2ZHWk0" data-id="a16ecbe5-da02-4e3d-9ba5-14938986ff72">Ps</div>
+              </div>
+              <div class="adobe-premier-IxxQsT visbycf-demi-bold-white-23px" data-id="327b7012-dd42-476c-9766-0415c34193c5">Adobe Premier</div>
+              <div class="group-41-IxxQsT" data-id="58bff3c3-2512-4949-b022-c11c08053389">
+                 <div class="rectangle-35-uW68ZG" data-id="994a78b8-a499-4315-b950-0416a4761402"></div>
+                 <div class="pr-uW68ZG" data-id="0fc4ee8f-a3e7-4c2a-b928-6043ea34b962">Pr</div>
+              </div>
+              <div class="adobe-xd-IxxQsT visbycf-demi-bold-white-23px" data-id="856236cc-5bf7-4dd0-a2ea-d8cd05c8977e">Adobe Xd</div>
+              <div class="group-42-IxxQsT" data-id="f8305750-f206-4dc6-aadd-ad88eb8c9d96">
+                 <div class="rectangle-36-ylC6kh" data-id="e795aee8-f03c-436c-a2f6-1853f20aa9b4"></div>
+                 <div class="xd" data-id="57b8c032-849f-4a61-85eb-3b14f699ecd4">Xd</div>
+              </div>
+              <div class="jira-IxxQsT visbycf-demi-bold-white-23px" data-id="29513ae5-7c2b-425e-9f27-11b34c8b1849">Jira</div>
+              <div class="group-43-IxxQsT" data-id="3a670b5c-1d23-4d4b-96f0-fc970e891d98">
+                 <div class="rectangle-37-xNYjL9" data-id="b713bfa3-5562-49e6-ab16-79689600d679"></div>
+                 <div class="o1-t-fb-c-xNYjL9 o1-t-fb-c" data-id="cd2aa9b6-8bf9-4c21-990b-cb75bf6c8648"><img class="o1-t-fb-c-MTU5pi o1-t-fb-c" data-id="35e3da32-953a-40db-bd1f-43e762bbe7f0" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/o1tfbc-1x-png@1x.png" alt="o1TFbC"></div>
+              </div>
+              <div class="microsoft-excel-IxxQsT visbycf-demi-bold-white-23px" data-id="b25e96c2-3470-4d50-bbe3-b916399bfb3f">Microsoft Excel</div>
+              <div class="group-44-IxxQsT" data-id="bb12f63a-2080-4400-899f-c1bba3894bde">
+                 <div class="rectangle-38-PWlyOh" data-id="0e97381d-4d88-4e6e-ae5a-d419e6f903ce"></div>
+                 <div class="xd" data-id="50cc1e57-10f6-4245-ada6-355456235871">Xd</div>
+                 <img class="i-oox-bw-PWlyOh" data-id="b148c77e-1cb5-4eeb-a88e-3e1af70b7414" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/iooxbw-1x-png@1x.png" alt="iOoxBW">
+              </div>
+           </div>
+           <a href="https://instagram.com"><div class="group-45-BxHJPN" data-id="992728b2-8500-4726-8e60-eb289c4e6fda"><img class="path-16-4xsg7U" data-id="bccda75a-9d42-4c2f-ac39-2a70b7a4d412" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-16-1x-png@1x.png" alt="Path 16"><img class="path-17-4xsg7U" data-id="de6297dd-5fc7-44d1-9429-4fa43e0d0a18" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-17-1x-png@1x.png" alt="Path 17"><img class="path-18-4xsg7U" data-id="bc50cbfb-e26f-4937-97c5-98f3b11de55e" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-18-1x-png@1x.png" alt="Path 18"></div></a>
+            <a href="https://www.linkedin.com/"><div class="group-48-BxHJPN" data-id="6061d6e6-18cf-428a-97b3-ef60a9e5b153">
+              <img class="path-19-f1ocjK" data-id="d54874e4-5e6e-40d6-88a3-106d831427e1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-16-1x-png@1x.png" alt="Path 19">
+              <div class="group-47-f1ocjK" data-id="f25fb155-92f6-4db4-bfa8-3a986d01ad4d">
+                 <div class="group-46-FkuyNU" data-id="e846327a-938c-4891-9057-40a6fe33feab"><img class="path-20-0pfXYT" data-id="9751fa90-d4c7-43ec-9fc6-c1131c2011a0" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-20-1x-png@1x.png" alt="Path 20"><img class="path-21-0pfXYT" data-id="e4b03788-10ce-463a-a0db-8da08e8eba37" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-21-1x-png@1x.png" alt="Path 21"></div>
+              </div>
+           </div></a>
+           <a href= "mailto: jigarkpat@gmail.com"> <div class="group-49-BxHJPN" data-id="12249cfe-2db3-48c9-a422-ef7a0c81b6e5"><img class="path-22-TH4gWp" data-id="b229148b-f31c-482c-a743-8fdcf5e39c6b" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-16-1x-png@1x.png" alt="Path 22"><img class="path-23-TH4gWp" data-id="5b91bd61-333d-41e7-a8c0-a84e5dd2caf8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-23-1x-png@1x.png" alt="Path 23"><img class="line-3-TH4gWp" data-id="a50baef7-3f75-400e-97e1-4cced0c2f613" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/line-3-1x-png@1x.png" alt="Line 3"><img class="line-4-TH4gWp" data-id="c86724a6-5147-4a96-996e-fe49084cf5f3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/line-4-1x-png@1x.png" alt="Line 4"></div></a>
+           <div class="ellipse-2-BxHJPN" data-id="bc5b9dee-6880-452d-9054-586e59254f0f"></div>
+           <div class="group-62-BxHJPN" data-id="2b1525e5-bae9-4d06-b0f6-ff0438f79ed4">
+              <div class="group-50-YZqb2E" data-id="f6b8517f-3c80-4e22-b2a6-afb6ab487226">
+                 <div class="hobbies-FOZqqx futura-condensedextra-bold-white-118px" data-id="a98d63e3-1866-460e-9c6f-d082b41682f7">HOBBIES</div>
+              </div>
+              <div class="group-61-YZqb2E" data-id="22801247-4831-47b8-99a3-330b68c3ad7d">
+                 <div class="group-54-Bx4Jbh" data-id="a77c8edb-1b3c-424c-9a18-9c5409400576">
+                    <div class="rectangle-39-1b4VeH" data-id="ec89fc83-a841-4518-8e85-2ca8b55b52d2"></div>
+                    <div class="group-52-1b4VeH" data-id="f5d433ec-3324-4d2b-af24-d8e15a43291e">
+                       <div class="group-51-1YW1dc" data-id="69efaa55-2f2b-48d2-91d0-74445333aa84"><img class="path-24-f9ZnZF" data-id="0b73a1f1-6c7e-42ba-839c-eac7a1206eb8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-24-1x-png@1x.png" alt="Path 24"><img class="path-25-f9ZnZF" data-id="18fe9d99-ccaa-4918-bd60-c86809ad211e" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-25-1x-png@1x.png" alt="Path 25"><img class="path-26-f9ZnZF" data-id="a71660eb-31fc-4cfa-8c56-f6466b05424a" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-26-1x-png@1x.png" alt="Path 26"><img class="path-27-f9ZnZF" data-id="b3a809cc-192e-4c37-84e5-5ad8a11f667a" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-27-1x-png@1x.png" alt="Path 27"></div>
+                    </div>
+                    <div class="group-53-1b4VeH" data-id="56def100-7cae-4e08-9130-9af8c21f9db1">
+                       <p class="i-love-to-travel-and-x5z06G visbycf-regular-normal-bon-jour-16px" data-id="7199f7c7-7f74-4c22-8bb4-a200b18fdd5f">I love to travel, and my favorite trip was a week-long hiking trip in Colorado, where I explored beautiful trails and took in some amazing sights.</p>
+                       <div class="traveling-x5z06G visbycf-demi-bold-white-36px" data-id="c27f26b7-e613-4c71-8617-4e2bad2d8a75">Traveling</div>
+                    </div>
+                 </div>
+                 <div class="group-58-Bx4Jbh" data-id="8c843aec-a4cc-4570-942f-748eb1b1f74b">
+                    <div class="rectangle-40-3HW4Nx" data-id="421dc767-36e9-46f2-8700-2c53a9975501"></div>
+                    <div class="group-55-3HW4Nx" data-id="844bbe50-bd46-47b7-bbd2-0b2b2ee33b58">
+                       <p class="im-a-huge-sports-fan-25xHKo visbycf-regular-normal-bon-jour-16px" data-id="1e0fd6d6-ffd7-4bdd-9be3-6f6c9f599306">I’m a huge sports fan and love getting in on the action! Whether I’m cheering for my favorite teams on TV or playing a pickup game with friends, I’m always ready for anything!</p>
+                       <div class="sports-25xHKo visbycf-demi-bold-white-36px" data-id="43aa14b8-368f-4a69-901f-d00e48ba5468">Sports</div>
+                    </div>
+                    <div class="group-57-3HW4Nx" data-id="94c1b8b9-6e48-461f-9c00-680d512130a2">
+                       <div class="group-56-QbYk1E" data-id="246d0bb6-e0db-45bb-bf1e-6e063749438d"><img class="path-28-W1dXW5" data-id="5b04d068-b604-447c-9ab9-ec9e80422a5c" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-28-1x-png@1x.png" alt="Path 28"><img class="path-29-W1dXW5" data-id="57c32385-c3d3-491b-8be9-0e3bd10b5d7e" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-29-1x-png@1x.png" alt="Path 29"></div>
+                    </div>
+                 </div>
+                 <div class="group-60-Bx4Jbh" data-id="9a1473dc-91e2-4feb-b354-9c4c381a778a">
+                    <div class="rectangle-41-4bgcos" data-id="0fabe05f-f818-406e-866a-52f1d03629ea"></div>
+                    <div class="group-59-4bgcos" data-id="5d8a12e2-e27d-443e-b335-108650c22e39">
+                       <p class="i-enjoy-reading-and-1hD3RT visbycf-regular-normal-bon-jour-16px" data-id="f6d8d749-2b63-4426-976f-63926597324b">I enjoy reading, and one of my recent favorites is &#34;The Midnight Library&#34; by Matt Haig. It really made me think about the choices we make in life and the possibilities that come with each decision.</p>
+                       <div class="reading-1hD3RT visbycf-demi-bold-white-36px" data-id="d2c70374-f8b0-4857-8b12-66be855dd721">Reading</div>
+                    </div>
+                    <img class="path-30-4bgcos" data-id="58d93a6a-7baa-46ca-b02c-d68612fe9ad4" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-30-1x-png@1x.png" alt="Path 30">
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  <script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script>
+</body>
+</html>
