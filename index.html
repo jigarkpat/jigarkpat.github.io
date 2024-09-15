@@ -1,56 +1,1327 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jigar Patel | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Link to Google Fonts or your own font files -->
-    <link href="https://fonts.googleapis.com/css2?family=Futura+Condensed+Extra+Black&family=Visby+CF:wght@400&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <!-- Left Sidebar -->
-        <aside class="sidebar">
-            <div class="profile-card">
-                <!-- Placeholder for profile picture -->
-                <img src="profile-placeholder.jpg" alt="Jigar Patel" class="profile-pic">
-                <h1>Jigar Patel</h1>
 
-                <!-- Social links with placeholder icons -->
-                <div class="social-links">
-                    <a href="mailto:your-email@example.com"><img src="email-placeholder.png" alt="Email"></a>
-                    <a href="https://www.instagram.com/your-profile"><img src="instagram-placeholder.png" alt="Instagram"></a>
-                    <a href="https://www.linkedin.com/in/your-profile"><img src="linkedin-placeholder.png" alt="LinkedIn"></a>
-                </div>
-            </div>
-        </aside>
 
-        <!-- Right Content -->
-        <main class="content">
-            <section id="about">
-                <h2>About</h2>
-                <p>My name is Jigar Patel. I'm a project manager with a focus on leading teams and delivering successful projects. From managing property renovations to working on large-scale initiatives for non-profits, I make sure projects run smoothly, on time, and within budget. I’ve worked across different industries, always looking for ways to improve processes and get the best results for the people I work with.</p>
-            </section>
 
-            <section id="experience">
-                <h2>Experience</h2>
-                <p><strong>ASJ Remodeling</strong><br> Oversee renovations for 100+ properties, helping the business thrive while making sure everything stays on schedule and within budget.<br> February ‘21 - Present</p>
-            </section>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=1366, maximum-scale=1.0">
+<link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-            <!-- Skills Section with Icons -->
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li><img src="ai-placeholder.png" alt="Adobe Illustrator"> Adobe Illustrator</li>
-                    <li><img src="ps-placeholder.png" alt="Adobe Photoshop"> Adobe Photoshop</li>
-                    <li><img src="pr-placeholder.png" alt="Adobe Premiere"> Adobe Premiere</li>
-                    <li><img src="xd-placeholder.png" alt="Adobe XD"> Adobe XD</li>
-                    <li><img src="jira-placeholder.png" alt="Jira"> Jira</li>
-                    <li><img src="excel-placeholder.png" alt="Microsoft Excel"> Microsoft Excel</li>
-                </ul>
-            </section>
-        </main>
-    </div>
-</body>
-</html>
+@font-face {
+  font-family: "Futura-CondensedExtraBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/600f031a5d99f6a347b57645/fonts/futura-condensed-extra-bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "VisbyCF-DemiBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://anima-uploads.s3.amazonaws.com/5c7648f2995604000b855b3d/VisbyCF-DemiBold-az.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "VisbyCF-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://anima-uploads.s3.amazonaws.com/5c709bfb00f64f000baf32c6/VisbyCF-Regular.otf') format("opentype");
+}
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66e5509196a1d0fa18d47a54.66e5509296a1d0fa18d47a57.MNAnmaK.hch.png");
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --bon-jour: #e2e2e2;
+  --silver-chalice: #afafaf;
+  --white: #ffffff;
+ 
+  --font-size-l: 30.9px;
+  --font-size-m: 21px;
+  --font-size-s: 13px;
+  --font-size-xl: 62px;
+  --font-size-xs: 10px;
+  --font-size-xxl: 100px;
+ 
+  --font-family-futura-condensedextrabold: "Futura-CondensedExtraBold", Helvetica;
+  --font-family-visbycf-demibold: "VisbyCF-DemiBold", Helvetica;
+  --font-family-visbycf-regular: "VisbyCF-Regular", Helvetica;
+}
+.visbycf-demi-bold-white-21px {
+  color: var(--white);
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.visbycf-regular-normal-silver-chalice-21px {
+  color: var(--silver-chalice);
+  font-family: var(--font-family-visbycf-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.futura-condensedextra-bold-white-100px {
+  color: var(--white);
+  font-family: var(--font-family-futura-condensedextrabold);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.visbycf-demi-bold-silver-chalice-21px {
+  color: var(--silver-chalice);
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.visbycf-demi-bold-white-10px {
+  color: var(--white);
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.visbycf-regular-normal-bon-jour-13px {
+  color: var(--bon-jour);
+  font-family: var(--font-family-visbycf-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.visbycf-demi-bold-white-30-9px {
+  color: var(--white);
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+}
+
+
+/* screen - artboard-1 */
+
+.artboard-1 {
+  background-color: var(--white);
+  height: 2739.74px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1366px;
+}
+
+.artboard-1 .group-8-XSArT0 {
+  background-color: transparent;
+  height: 2740px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1366px;
+}
+
+.artboard-1 .group-7-n4SBNU {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .group-6-nlrolw {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .group-5-fVZGhK {
+  background-color: transparent;
+  height: calc(100.00% + 10px);
+  left: -5px;
+  position: relative;
+  top: -5px;
+  width: calc(100.00% + 10px);
+}
+
+.artboard-1 .group-4-GQekr1 {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .group-3-h6508J {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .group-2-8hrT5M {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .group-1-5BH8FM {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .rectangle-13-XSArT0 {
+  background-color: var(--white);
+  border-radius: 15.67px;
+  height: 546px;
+  left: 161px;
+  position: absolute;
+  top: 134px;
+  width: 321px;
+}
+
+.artboard-1 .jigarpatel-XSArT0 {
+  background-color: transparent;
+  color: #3a3a3a;
+  font-family: var(--font-family-futura-condensedextrabold);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 245px;
+  letter-spacing: 0.00px;
+  line-height: 74.4px;
+  position: absolute;
+  text-align: center;
+  top: 396px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.artboard-1 .group-9-XSArT0 {
+  background-color: transparent;
+  height: 396px;
+  left: 577px;
+  position: absolute;
+  top: 119px;
+  width: 603px;
+}
+
+.artboard-1 .about-K5UMvF {
+  background-color: transparent;
+  height: 129px;
+  left: 1px;
+  letter-spacing: 0.00px;
+  line-height: 120.0px;
+  position: absolute;
+  text-align: left;
+  top: 3px;
+  white-space: nowrap;
+  width: 291px;
+}
+
+.artboard-1 .my-name-is-jigar-im-K5UMvF {
+  background-color: transparent;
+  bottom: 1px;
+  height: 263px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  text-align: left;
+  width: calc(100.00% + 2px);
+}
+
+.artboard-1 .group-11-XSArT0 {
+  background-color: transparent;
+  height: 950px;
+  left: 577px;
+  position: absolute;
+  top: 570px;
+  width: 581px;
+}
+
+.artboard-1 .experience-esUwcR {
+  background-color: transparent;
+  height: 129px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 120.0px;
+  position: absolute;
+  text-align: left;
+  top: 3px;
+  white-space: nowrap;
+  width: calc(100.00% - 71px);
+}
+
+.artboard-1 .group-10-esUwcR {
+  background-color: transparent;
+  height: calc(100.00% - 131px);
+  left: 1px;
+  position: absolute;
+  top: 131px;
+  width: 100%;
+}
+
+.artboard-1 .asj-remodelingoverse-Mx2qHL {
+  background-color: transparent;
+  height: 192px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  top: -2px;
+  width: calc(100.00% + 2px);
+}
+
+.artboard-1 .span0-vf7t1D {
+}
+
+.artboard-1 .span1-vf7t1D {
+}
+
+.artboard-1 .span2-vf7t1D {
+}
+
+.artboard-1 .lighthouse-investmen-Mx2qHL {
+  background-color: transparent;
+  height: 192px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  top: calc(33.10% - 63px);
+  width: 100%;
+}
+
+.artboard-1 .span0-1k1wqN {
+}
+
+.artboard-1 .span1-1k1wqN {
+}
+
+.artboard-1 .span2-1k1wqN {
+}
+
+.artboard-1 .blueprint-alphacontr-Mx2qHL {
+  background-color: transparent;
+  bottom: calc(33.46% - 64px);
+  height: 192px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.artboard-1 .span0-ScM6El {
+}
+
+.artboard-1 .span1-ScM6El {
+}
+
+.artboard-1 .span2-ScM6El {
+}
+
+.artboard-1 .bapslead-teams-to-cr-Mx2qHL {
+  background-color: transparent;
+  bottom: 1px;
+  height: 192px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.artboard-1 .span0-HYxiNh {
+}
+
+.artboard-1 .span1-HYxiNh {
+}
+
+.artboard-1 .span2-HYxiNh {
+}
+
+.artboard-1 .title-XSArT0 {
+  background-color: transparent;
+  height: auto;
+  left: 577px;
+  letter-spacing: 0.00px;
+  line-height: 120.0px;
+  position: absolute;
+  text-align: left;
+  top: 1584px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.artboard-1 .adobe-illustrator-XSArT0 {
+  background-color: transparent;
+  height: auto;
+  left: 632px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  text-align: left;
+  top: 1726px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.artboard-1 .group-12-XSArT0 {
+  background-color: transparent;
+  height: 37px;
+  left: 582px;
+  position: absolute;
+  top: 1722px;
+  width: 37px;
+}
+
+.artboard-1 .rectangle-14-Kmo2rf {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .ai-Kmo2rf {
+  background-color: transparent;
+  color: #fe9c00;
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: calc(100.00% - 3px);
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  right: calc(43.33% - 10px);
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: 22px;
+}
+
+.artboard-1 .adobe-photoshop-XSArT0 {
+  background-color: transparent;
+  height: auto;
+  left: 632px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  text-align: left;
+  top: 1787px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.artboard-1 .group-13-XSArT0 {
+  background-color: transparent;
+  height: 37px;
+  left: 582px;
+  position: absolute;
+  top: 1783px;
+  width: 37px;
+}
+
+.artboard-1 .rectangle-15-QDoBYK {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .ps-QDoBYK {
+  background-color: transparent;
+  color: #2ca6ff;
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: calc(100.00% - 3px);
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  right: calc(42.30% - 10px);
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.artboard-1 .adobe-premier-XSArT0 {
+  background-color: transparent;
+  height: auto;
+  left: 632px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  text-align: left;
+  top: 1848px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.artboard-1 .group-14-XSArT0 {
+  background-color: transparent;
+  height: 37px;
+  left: 582px;
+  position: absolute;
+  top: 1845px;
+  width: 37px;
+}
+
+.artboard-1 .rectangle-16-Z6PGoz {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .pr-Z6PGoz {
+  background-color: transparent;
+  color: #9894f8;
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: calc(100.00% - 3px);
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  right: calc(43.33% - 10px);
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: 22px;
+}
+
+.artboard-1 .adobe-xd-XSArT0 {
+  background-color: transparent;
+  height: auto;
+  left: 917px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  text-align: left;
+  top: 1726px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.artboard-1 .group-15-XSArT0 {
+  background-color: transparent;
+  height: 37px;
+  left: 867px;
+  position: absolute;
+  top: 1722px;
+  width: 37px;
+}
+
+.artboard-1 .rectangle-17-x9SN9H {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .jira-XSArT0 {
+  background-color: transparent;
+  height: auto;
+  left: 917px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  text-align: left;
+  top: 1787px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.artboard-1 .group-16-XSArT0 {
+  background-color: transparent;
+  height: 37px;
+  left: 867px;
+  position: absolute;
+  top: 1845px;
+  width: 37px;
+}
+
+.artboard-1 .rectangle-18-1qnuRY {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .o1-t-fb-c-1qnuRY {
+  bottom: calc(46.64% - 12px);
+  height: 25px;
+  left: calc(50.00% - 12px);
+  width: 25px;
+}
+
+.artboard-1 .o1-t-fb-c-Klv1M3 {
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .microsoft-excel-XSArT0 {
+  background-color: transparent;
+  height: auto;
+  left: 917px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  text-align: left;
+  top: 1848px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.artboard-1 .group-17-XSArT0 {
+  background-color: transparent;
+  height: 37px;
+  left: 867px;
+  position: absolute;
+  top: 1783px;
+  width: 37px;
+}
+
+.artboard-1 .rectangle-19-yFkj0b {
+  background-color: var(--white);
+  border-radius: 9.98px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .i-oox-bw-yFkj0b {
+  background-color: transparent;
+  height: calc(100.00% - 11px);
+  left: 6px;
+  object-fit: cover;
+  position: absolute;
+  top: 6px;
+  width: calc(100.00% - 11px);
+}
+
+.artboard-1 .group-18-XSArT0 {
+  background-color: transparent;
+  height: 40px;
+  left: 303px;
+  position: absolute;
+  top: 577px;
+  width: 40px;
+}
+
+.artboard-1 .path-1-TJHooX {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .path-2-TJHooX {
+  background-color: transparent;
+  height: 19px;
+  left: calc(50.00% - 9px);
+  object-fit: cover;
+  position: absolute;
+  top: calc(49.99% - 9px);
+  width: 19px;
+}
+
+.artboard-1 .path-3-TJHooX {
+  background-color: transparent;
+  height: 5px;
+  object-fit: cover;
+  position: absolute;
+  right: calc(17.94% - 1px);
+  top: calc(17.93% - 1px);
+  width: 5px;
+}
+
+.artboard-1 .group-21-XSArT0 {
+  background-color: transparent;
+  height: 40px;
+  left: 372px;
+  position: absolute;
+  top: 577px;
+  width: 40px;
+}
+
+.artboard-1 .path-4-P6Dx6p {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .group-20-P6Dx6p {
+  background-color: transparent;
+  height: 22px;
+  position: absolute;
+  right: calc(50.00% - 12px);
+  top: calc(50.00% - 11px);
+  width: 23px;
+}
+
+.artboard-1 .group-19-RHYb5C {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .path-5-bPNxAw {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 5px;
+}
+
+.artboard-1 .path-6-bPNxAw {
+  background-color: transparent;
+  bottom: 1px;
+  height: 17px;
+  object-fit: cover;
+  position: absolute;
+  right: 0px;
+  width: 16px;
+}
+
+.artboard-1 .group-22-XSArT0 {
+  background-color: transparent;
+  height: 40px;
+  left: 234px;
+  position: absolute;
+  top: 577px;
+  width: 40px;
+}
+
+.artboard-1 .path-7-k9Daai {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .path-8-k9Daai {
+  background-color: transparent;
+  height: 14px;
+  left: 1px;
+  object-fit: cover;
+  position: absolute;
+  top: calc(40.51% - 6px);
+  width: calc(100.00% - 2px);
+}
+
+.artboard-1 .line-1-k9Daai {
+  background-color: transparent;
+  bottom: calc(33.76% - 4px);
+  height: 12px;
+  object-fit: cover;
+  position: absolute;
+  right: 1px;
+  width: 13px;
+}
+
+.artboard-1 .line-2-k9Daai {
+  background-color: transparent;
+  bottom: calc(33.77% - 4px);
+  height: 12px;
+  left: 1px;
+  object-fit: cover;
+  position: absolute;
+  width: 14px;
+}
+
+.artboard-1 .ellipse-1-XSArT0 {
+  background-color: #a0d1de;
+  border-radius: 97.54px;
+  height: 195px;
+  left: 223px;
+  position: absolute;
+  top: 166px;
+  width: 195px;
+}
+
+.artboard-1 .group-35-XSArT0 {
+  background-color: transparent;
+  height: 568px;
+  left: 571px;
+  position: absolute;
+  top: 1969px;
+  width: 587px;
+}
+
+.artboard-1 .group-23-oUHlAL {
+  background-color: transparent;
+  height: 127px;
+  left: 6px;
+  position: absolute;
+  top: 0px;
+  width: 368px;
+}
+
+.artboard-1 .hobbies-7Qybov {
+  background-color: transparent;
+  height: calc(100.00% + 2px);
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 120.0px;
+  position: absolute;
+  text-align: left;
+  top: 3px;
+  white-space: nowrap;
+  width: calc(100.00% + 2px);
+}
+
+.artboard-1 .group-34-oUHlAL {
+  background-color: transparent;
+  height: calc(100.00% - 141px);
+  left: 0px;
+  position: absolute;
+  top: 141px;
+  width: 100%;
+}
+
+.artboard-1 .group-27-WcXqoC {
+  background-color: transparent;
+  height: 127px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .rectangle-20-m5F7Mu {
+  background-color: #207289;
+  border-radius: 22.64px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .group-25-m5F7Mu {
+  background-color: transparent;
+  height: 62px;
+  left: 31px;
+  position: absolute;
+  top: calc(50.00% - 31px);
+  width: 69px;
+}
+
+.artboard-1 .group-24-uEU0KZ {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .path-9-EOBQkt {
+  background-color: transparent;
+  height: calc(100.00% - 9px);
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 9px;
+  width: 100%;
+}
+
+.artboard-1 .path-10-EOBQkt {
+  background-color: transparent;
+  height: 5px;
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 19px;
+}
+
+.artboard-1 .path-11-EOBQkt {
+  background-color: transparent;
+  height: 5px;
+  object-fit: cover;
+  position: absolute;
+  right: 1px;
+  top: calc(33.31% - 2px);
+  width: 19px;
+}
+
+.artboard-1 .path-12-EOBQkt {
+  background-color: transparent;
+  height: 5px;
+  object-fit: cover;
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  width: 19px;
+}
+
+.artboard-1 .group-26-m5F7Mu {
+  background-color: transparent;
+  height: calc(100.00% - 23px);
+  position: absolute;
+  right: 25px;
+  top: 11px;
+  width: 432px;
+}
+
+.artboard-1 .i-love-to-travel-and-cf7QqA {
+  background-color: transparent;
+  bottom: -1px;
+  height: 60px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 15.6px;
+  position: absolute;
+  text-align: left;
+  width: calc(100.00% + 2px);
+}
+
+.artboard-1 .traveling-cf7QqA {
+  background-color: transparent;
+  height: 50px;
+  left: 1px;
+  letter-spacing: 0.00px;
+  line-height: 37.0px;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  white-space: nowrap;
+  width: 135px;
+}
+
+.artboard-1 .group-31-WcXqoC {
+  background-color: transparent;
+  height: 127px;
+  left: 0px;
+  position: absolute;
+  top: calc(50.00% - 64px);
+  width: 100%;
+}
+
+.artboard-1 .rectangle-21-i29ovr {
+  background-color: #ad6959;
+  border-radius: 22.64px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .group-28-i29ovr {
+  background-color: transparent;
+  height: calc(100.00% - 23px);
+  position: absolute;
+  right: 25px;
+  top: 11px;
+  width: 432px;
+}
+
+.artboard-1 .im-a-huge-sports-fan-vxP8Wm {
+  background-color: transparent;
+  bottom: -1px;
+  height: 60px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 15.6px;
+  position: absolute;
+  text-align: left;
+  width: calc(100.00% + 2px);
+}
+
+.artboard-1 .sports-vxP8Wm {
+  background-color: transparent;
+  height: 50px;
+  left: 1px;
+  letter-spacing: 0.00px;
+  line-height: 37.0px;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  white-space: nowrap;
+  width: 93px;
+}
+
+.artboard-1 .group-30-i29ovr {
+  background-color: transparent;
+  bottom: calc(50.00% - 36px);
+  height: 72px;
+  left: 41px;
+  position: absolute;
+  width: 49px;
+}
+
+.artboard-1 .group-29-Mg5Gdp {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .path-13-xi0zu3 {
+  background-color: transparent;
+  bottom: 0px;
+  height: 34px;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  width: calc(100.00% - 3px);
+}
+
+.artboard-1 .path-14-xi0zu3 {
+  background-color: transparent;
+  height: 35px;
+  object-fit: cover;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 35px;
+}
+
+.artboard-1 .group-33-WcXqoC {
+  background-color: transparent;
+  bottom: 0px;
+  height: 127px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.artboard-1 .rectangle-22-Yffl8A {
+  background-color: #733953;
+  border-radius: 22.64px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.artboard-1 .group-32-Yffl8A {
+  background-color: transparent;
+  height: calc(100.00% - 23px);
+  position: absolute;
+  right: 25px;
+  top: 11px;
+  width: 432px;
+}
+
+.artboard-1 .i-enjoy-reading-and-spyTek {
+  background-color: transparent;
+  bottom: -1px;
+  height: 60px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 15.6px;
+  position: absolute;
+  text-align: left;
+  width: calc(100.00% + 2px);
+}
+
+.artboard-1 .reading-spyTek {
+  background-color: transparent;
+  height: 50px;
+  left: 1px;
+  letter-spacing: 0.00px;
+  line-height: 37.0px;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  white-space: nowrap;
+  width: 120px;
+}
+
+.artboard-1 .path-15-Yffl8A {
+  background-color: transparent;
+  bottom: calc(50.00% - 26px);
+  height: 52px;
+  left: 38px;
+  object-fit: cover;
+  position: absolute;
+  width: 57px;
+}
+
+.artboard-1 .o1-t-fb-c {
+  background-color: transparent;
+  position: absolute;
+}
+
+.artboard-1 .xd {
+  background-color: transparent;
+  color: #f75fee;
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: calc(100.00% - 3px);
+  left: 5px;
+  letter-spacing: 0.00px;
+  line-height: 25.2px;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: calc(100.00% - 9px);
+}
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="artboard-1"><div class="container-center-horizontal"><div class="artboard-1 screen " data-id="377b22b7-944f-4107-bbaf-d384ab2ec014"><div class="group-8-XSArT0" data-id="c7f49ae6-b3a7-4c5f-979b-0feb3859193d"><div class="group-7-n4SBNU" data-id="0a24a59a-7e44-442c-9950-3914bb095903"><div class="group-6-nlrolw" data-id="57ad322c-58e6-41df-8c36-cf9c40289d68"><div class="group-5-fVZGhK" data-id="653b0109-2edc-41da-8872-52c45d616df6"><div class="group-4-GQekr1" data-id="e7150e40-0157-414b-8608-74d642ca3059"><div class="group-3-h6508J" data-id="84fe5d8a-eb59-4292-ad55-a63481f9505a"><div class="group-2-8hrT5M" data-id="29879b6c-c219-4224-a981-d39f3dde6579"><img class="group-1-5BH8FM" data-id="8162d442-90bb-4e0c-a87c-f0e96ef5e63b" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/group-1@1x.png" alt="Group 1"></div></div></div></div></div></div></div><div class="rectangle-13-XSArT0" data-id="1c9d18d6-988e-4730-a7a2-9d6c995118d0"></div><div class="jigarpatel-XSArT0" data-id="9f2d42e0-a599-4317-89b8-df477a7545e8">JIGAR<br>PATEL</div><div class="group-9-XSArT0" data-id="e0772a00-de6d-464e-8538-56d263099ae5"><div class="about-K5UMvF futura-condensedextra-bold-white-100px" data-id="f7d48a6b-c357-4d7d-9c78-70d877084d11">ABOUT</div><p class="my-name-is-jigar-im-K5UMvF visbycf-regular-normal-silver-chalice-21px" data-id="4edd9f99-34d3-405a-8b84-5bf70a5e169c">My name is Jigar. I&#39;m a project manager with a focus on leading teams and delivering successful projects. From managing property renovations to working on large-scale initiatives for non-profits, I make sure projects run smoothly, on time, and within budget.<br><br>I’ve worked across different industries, always looking for ways to improve processes and get the best results for the people I work with.<br></p></div><div class="group-11-XSArT0" data-id="69b8d80d-7f10-4743-8a67-9faefb5350c4"><div class="experience-esUwcR futura-condensedextra-bold-white-100px" data-id="4ebd3f92-0c06-48bc-bd5e-bb2c5c6c82e8">EXPERIENCE</div><div class="group-10-esUwcR" data-id="b2187ee0-e9d4-4b37-8c2e-3768d9b67f76"><p class="asj-remodelingoverse-Mx2qHL visbycf-demi-bold-silver-chalice-21px" data-id="44838ec8-d550-4148-8a20-1281bd3918fe"><span class="span0-vf7t1D visbycf-demi-bold-white-21px">ASJ Remodeling<br></span><span class="span1-vf7t1D visbycf-demi-bold-white-10px"><br></span><span class="span2-vf7t1D visbycf-regular-normal-silver-chalice-21px">Oversee renovations for 100+ properties, helping the business thrive while making sure everything stays on schedule and within budget.<br><br>February ‘21 - Present<br></span></p><p class="lighthouse-investmen-Mx2qHL visbycf-demi-bold-silver-chalice-21px" data-id="aae9f308-6f1a-496d-8555-b07095bc3843"><span class="span0-1k1wqN visbycf-demi-bold-white-21px">Lighthouse Investments<br></span><span class="span1-1k1wqN visbycf-demi-bold-white-10px"><br></span><span class="span2-1k1wqN visbycf-regular-normal-silver-chalice-21px">Managed a portfolio of 35 hotels, using data dashboards to boost revenue and striking deals with vendors to save some cash.<br><br>January ‘20 - December ’20<br></span></p><p class="blueprint-alphacontr-Mx2qHL visbycf-demi-bold-silver-chalice-21px" data-id="7a4dffe3-c46e-4940-84b8-5984762a14eb"><span class="span0-ScM6El visbycf-demi-bold-white-21px">Blueprint Alpha<br></span><span class="span1-ScM6El visbycf-demi-bold-white-10px"><br></span><span class="span2-ScM6El visbycf-regular-normal-silver-chalice-21px">Contributed to an object detection tool as a Software Engineer Intern, making the system work better and speeding up database results.<br><br>May ‘17 - July ’21<br></span></p><p class="bapslead-teams-to-cr-Mx2qHL visbycf-demi-bold-silver-chalice-21px" data-id="c9f602a0-2ae0-4bd7-b069-b33bc10e21c4"><span class="span0-HYxiNh visbycf-demi-bold-white-21px">B.A.P.S<br></span><span class="span1-HYxiNh visbycf-demi-bold-white-10px"><br></span><span class="span2-HYxiNh visbycf-regular-normal-silver-chalice-21px">Lead teams to create content, run multimedia projects, and organize events that uplift the community and foster spiritual growth.<br><br>August ‘14 - Present<br></span></p></div></div><h1 class="title-XSArT0 futura-condensedextra-bold-white-100px" data-id="319c24b6-d4f2-4d0e-909b-1d7db11184fd">SKILLS</h1><div class="adobe-illustrator-XSArT0 visbycf-demi-bold-white-21px" data-id="e0145686-c1e8-4c28-80b4-37d996a5b930">Adobe Illustrator</div><div class="group-12-XSArT0" data-id="4a62b1f1-865f-4964-9483-62582f1461e4"><div class="rectangle-14-Kmo2rf" data-id="fa9d487c-69bf-4111-8b51-716652412ae7"></div><div class="ai-Kmo2rf" data-id="7fd237e4-77ef-4f12-8bd9-7b45f26f9dbc">Ai</div></div><div class="adobe-photoshop-XSArT0 visbycf-demi-bold-white-21px" data-id="c22a9b8f-e9c2-4042-a2eb-dd15394badba">Adobe Photoshop</div><div class="group-13-XSArT0" data-id="81905efa-d205-4a47-9c24-3cee737dcf1f"><div class="rectangle-15-QDoBYK" data-id="b9e1353e-e2d8-4f7a-8d07-42c2663b51d8"></div><div class="ps-QDoBYK" data-id="d6097434-c409-4869-ae80-ed3e5b8635b5">Ps</div></div><div class="adobe-premier-XSArT0 visbycf-demi-bold-white-21px" data-id="6b216107-7c51-497b-990a-24a8526d2f3c">Adobe Premier</div><div class="group-14-XSArT0" data-id="637ff8c9-3cb8-4f1e-9025-c69f5588e1a8"><div class="rectangle-16-Z6PGoz" data-id="5e1c2ae3-f991-4e2f-b6eb-064a931f450e"></div><div class="pr-Z6PGoz" data-id="dc3ef4c9-9da6-48c8-ac7d-a44a86aef4ca">Pr</div></div><div class="adobe-xd-XSArT0 visbycf-demi-bold-white-21px" data-id="b57ad5f8-798c-4922-88dc-6af9d3437dd0">Adobe Xd</div><div class="group-15-XSArT0" data-id="ce1a2420-cec3-45e6-baab-2e60fb7477d4"><div class="rectangle-17-x9SN9H" data-id="f3759c38-8470-4872-8a9c-a82e45726c03"></div><div class="xd" data-id="9eca3cd9-e68c-428f-a1ce-4e6724bcb58e">Xd</div></div><div class="jira-XSArT0 visbycf-demi-bold-white-21px" data-id="7ecdf3af-5f40-4a40-b436-6b2a220043dd">Jira</div><div class="group-16-XSArT0" data-id="0a407685-1edd-47e8-aeb5-c63b8f9b7a61"><div class="rectangle-18-1qnuRY" data-id="0f39cbce-ff2d-4a06-825d-069bd1ea5b15"></div><div class="o1-t-fb-c-1qnuRY o1-t-fb-c" data-id="0a5410cb-7ba7-4828-b835-9bdad9f79e63"><img class="o1-t-fb-c-Klv1M3 o1-t-fb-c" data-id="95b4c347-d26c-4d85-bef5-7b2e9bd35631" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/o1tfbc@1x.png" alt="o1TFbC"></div></div><div class="microsoft-excel-XSArT0 visbycf-demi-bold-white-21px" data-id="5674e306-e6bd-41fe-9765-95411d446e3c">Microsoft Excel</div><div class="group-17-XSArT0" data-id="c7fa5780-b18a-427f-afb0-e7ce77837e01"><div class="rectangle-19-yFkj0b" data-id="f02d1b51-3297-454e-9ca5-436c1d8b78fc"></div><div class="xd" data-id="6937d273-a4a2-4af3-ba13-f721de6edbb5">Xd</div><img class="i-oox-bw-yFkj0b" data-id="dc290e05-9cc6-43c6-9b4a-b2e016e6ed5a" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/iooxbw@1x.png" alt="iOoxBW"></div><div class="group-18-XSArT0" data-id="38ef8d23-6584-41ae-a979-83c8a851f63a"><img class="path-1-TJHooX" data-id="ada0c18e-c582-4d31-8184-65491b7f80a6" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-1@1x.png" alt="Path 1"><img class="path-2-TJHooX" data-id="0ff5784e-5acf-4e51-b7ef-cee97ba47895" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-2@1x.png" alt="Path 2"><img class="path-3-TJHooX" data-id="4c215b0f-68a2-43b9-8b8f-146d34d32eea" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-3@1x.png" alt="Path 3"></div><div class="group-21-XSArT0" data-id="24d843ed-e6b1-40cf-905f-accb18e0d54e"><img class="path-4-P6Dx6p" data-id="7ddabf20-49a7-425e-a561-84130eccd6a8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-4@1x.png" alt="Path 4"><div class="group-20-P6Dx6p" data-id="c0c16347-bb19-4154-a4cc-8ea80010eb73"><div class="group-19-RHYb5C" data-id="45e2b43f-0137-48b1-ba89-b5072a22bf23"><img class="path-5-bPNxAw" data-id="6b510bf8-c22a-4ebc-a8c1-78ab59144759" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-5@1x.png" alt="Path 5"><img class="path-6-bPNxAw" data-id="386089ea-0da7-4e07-bebd-4f764d85f985" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-6@1x.png" alt="Path 6"></div></div></div><div class="group-22-XSArT0" data-id="491d92b7-a362-4295-805e-991dfdd77a7e"><img class="path-7-k9Daai" data-id="07aef4c8-2b7e-4cde-9fc4-22a2d03d5750" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-1@1x.png" alt="Path 7"><img class="path-8-k9Daai" data-id="2f477c5d-a763-417a-9149-3dafe5be2495" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-8@1x.png" alt="Path 8"><img class="line-1-k9Daai" data-id="d7e1f2b3-2eaf-49cf-be77-db816fe454f5" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/line-1@1x.png" alt="Line 1"><img class="line-2-k9Daai" data-id="40714214-acba-4459-aa07-790788465abc" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/line-2@1x.png" alt="Line 2"></div><div class="ellipse-1-XSArT0" data-id="f79497a2-f19d-4d9f-b3f4-c9139f46b4ab"></div><div class="group-35-XSArT0" data-id="df33f409-f210-4bf0-b6d2-22be9f4fd755"><div class="group-23-oUHlAL" data-id="1284e66e-6c55-48f0-a8ed-d2286f365ac3"><div class="hobbies-7Qybov futura-condensedextra-bold-white-100px" data-id="a6bf4432-e2eb-48a5-b1b3-759f43a5a624">HOBBIES</div></div><div class="group-34-oUHlAL" data-id="240e2612-b5b4-4c27-a515-c809f42644d4"><div class="group-27-WcXqoC" data-id="24e15226-a7c6-4c08-96db-aea6d8942972"><div class="rectangle-20-m5F7Mu" data-id="b029753d-94f5-447e-99ec-263d378ab44a"></div><div class="group-25-m5F7Mu" data-id="b754deba-fd67-4d7d-80f2-b37cfc228ebd"><div class="group-24-uEU0KZ" data-id="6a719d3f-0092-4c1d-a2c9-dd2a750853c6"><img class="path-9-EOBQkt" data-id="a836adda-6e21-4068-aa27-3f9ea67e28e1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-9@1x.png" alt="Path 9"><img class="path-10-EOBQkt" data-id="2241dda1-8fed-4528-a420-aec300eb23b0" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-10@1x.png" alt="Path 10"><img class="path-11-EOBQkt" data-id="0478cffc-ee19-446a-bc05-f88a98396412" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-11@1x.png" alt="Path 11"><img class="path-12-EOBQkt" data-id="8a4b9134-dc8d-41da-906e-a87b83233f7c" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-12@1x.png" alt="Path 12"></div></div><div class="group-26-m5F7Mu" data-id="40b64715-4d2f-48d6-821b-4f3cc857ad78"><p class="i-love-to-travel-and-cf7QqA visbycf-regular-normal-bon-jour-13px" data-id="c008cec1-954c-45e5-9dfb-7316f507c5ed">I love to travel, and my favorite trip was a week-long hiking trip in Colorado, where I explored beautiful trails and took in some amazing sights.</p><div class="traveling-cf7QqA visbycf-demi-bold-white-30-9px" data-id="b364c528-9c8a-49c5-8af2-5ac652ac1e0b">Traveling</div></div></div><div class="group-31-WcXqoC" data-id="a95cb01f-c381-477a-8b04-dc28a50ae554"><div class="rectangle-21-i29ovr" data-id="e4d361f1-25c1-4d7c-9d47-479a5430709e"></div><div class="group-28-i29ovr" data-id="13b3484f-0bbb-4e7f-942b-b7b580cbac56"><p class="im-a-huge-sports-fan-vxP8Wm visbycf-regular-normal-bon-jour-13px" data-id="abb5ee7b-6f89-4db3-b50e-41f61c167d13">I’m a huge sports fan and love getting in on the action! Whether I’m cheering for my favorite teams on TV or playing a pickup game with friends, I’m always ready for anything!</p><div class="sports-vxP8Wm visbycf-demi-bold-white-30-9px" data-id="456374d3-1a91-41f4-b9ba-871b18795801">Sports</div></div><div class="group-30-i29ovr" data-id="101a7dd6-11f0-4992-ac6e-5ef85c06918b"><div class="group-29-Mg5Gdp" data-id="7070183b-2f58-44f0-83f3-9cd7f8cea6da"><img class="path-13-xi0zu3" data-id="9981d19f-1d14-4615-a1cf-ed84e60b65ca" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-13@1x.png" alt="Path 13"><img class="path-14-xi0zu3" data-id="ad2cbf22-c963-47d8-982a-22b12acad827" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-14@1x.png" alt="Path 14"></div></div></div><div class="group-33-WcXqoC" data-id="e760561b-cec4-434d-85a3-d61da290bec1"><div class="rectangle-22-Yffl8A" data-id="7115ad2e-93e7-4a82-b43b-c03f43ee001d"></div><div class="group-32-Yffl8A" data-id="0a7d532c-0b18-426d-b333-20da12fc8559"><p class="i-enjoy-reading-and-spyTek visbycf-regular-normal-bon-jour-13px" data-id="2a147f3d-4974-4a27-a304-2662008d4313">I enjoy reading, and one of my recent favorites is &#34;The Midnight Library&#34; by Matt Haig. It really made me think about the choices we make in life and the possibilities that come with each decision.</p><div class="reading-spyTek visbycf-demi-bold-white-30-9px" data-id="81dbd133-6167-4ea9-850d-b5a18d186c36">Reading</div></div><img class="path-15-Yffl8A" data-id="7b1cb22e-fba4-421b-96bf-be487d1c967e" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e626371c1250a552abf062/img/path-15@1x.png" alt="Path 15"></div></div></div></div></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
