@@ -1,1398 +1,206 @@
 <!DOCTYPE html>
-
-
-
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=1614, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-
-@font-face {
-  font-family: "Futura-CondensedExtraBold";
-  font-style: normal;
-  font-weight: 700;
-  src: url('https://anima-uploads.s3.amazonaws.com/projects/600f031a5d99f6a347b57645/fonts/futura-condensed-extra-bold.otf') format("opentype");
-}
-
-@font-face {
-  font-family: "VisbyCF-Regular";
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://anima-uploads.s3.amazonaws.com/5c709bfb00f64f000baf32c6/VisbyCF-Regular.otf') format("opentype");
-}
-
-@font-face {
-  font-family: "VisbyCF-DemiBold";
-  font-style: normal;
-  font-weight: 700;
-  src: url('https://anima-uploads.s3.amazonaws.com/5c7648f2995604000b855b3d/VisbyCF-DemiBold-az.ttf') format("truetype");
-}
-/* The following line is used to measure usage of this code. You can remove it if you want. */
-@import url("https://px.animaapp.com/66e5509196a1d0fa18d47a54.66e5509296a1d0fa18d47a57.MNAnmaK.hch.png");
-
-
-.screen textarea:focus,
-.screen input:focus {
-  outline: none;
-}
-
-.screen * {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-.screen div {
-  -webkit-text-size-adjust: none;
-}
-
-.component-wrapper a {
-  display: contents;
-  pointer-events: auto;
-  text-decoration: none;
-}
-
-.component-wrapper * {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  pointer-events: none;
-}
-
-.component-wrapper a *,
-.component-wrapper input,
-.component-wrapper video,
-.component-wrapper iframe {
-  pointer-events: auto;
-}
-
-.component-wrapper.not-ready,
-.component-wrapper.not-ready * {
-  visibility: hidden !important;
-}
-
-.screen a {
-  display: contents;
-  text-decoration: none;
-}
-
-.full-width-a {
-  width: 100%;
-}
-
-.full-height-a {
-  height: 100%;
-}
-
-.container-center-vertical {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  pointer-events: none;
-}
-
-.container-center-vertical > * {
-  flex-shrink: 0;
-  pointer-events: auto;
-}
-
-.container-center-horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  pointer-events: none;
-  width: 100%;
-}
-
-.container-center-horizontal > * {
-  flex-shrink: 0;
-  pointer-events: auto;
-}
-
-.auto-animated div {
-  --z-index: -1;
-  opacity: 0;
-  position: absolute;
-}
-
-.auto-animated input {
-  --z-index: -1;
-  opacity: 0;
-  position: absolute;
-}
-
-.auto-animated .container-center-vertical,
-.auto-animated .container-center-horizontal {
-  opacity: 1;
-}
-
-.overlay-base {
-  display: none;
-  height: 100%;
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.overlay-base.animate-appear {
-  align-items: center;
-  animation: reveal 0.3s ease-in-out 1 normal forwards;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  opacity: 0;
-}
-
-.overlay-base.animate-disappear {
-  animation: reveal 0.3s ease-in-out 1 reverse forwards;
-  display: block;
-  opacity: 1;
-  pointer-events: none;
-}
-
-.overlay-base.animate-disappear * {
-  pointer-events: none;
-}
-
-@keyframes reveal {
-  from { opacity: 0 }
- to { opacity: 1 }
-}
-
-.animate-nodelay {
-  animation-delay: 0s;
-}
-
-.align-self-flex-start {
-  align-self: flex-start;
-}
-
-.align-self-flex-end {
-  align-self: flex-end;
-}
-
-.align-self-flex-center {
-  align-self: flex-center;
-}
-
-.valign-text-middle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.valign-text-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-input:focus {
-  outline: none;
-}
-
-.listeners-active,
-.listeners-active * {
-  pointer-events: auto;
-}
-
-.hidden,
-.hidden * {
-  pointer-events: none;
-  visibility: hidden;
-}
-
-.smart-layers-pointers,
-.smart-layers-pointers * {
-  pointer-events: auto;
-  visibility: visible;
-}
-
-.listeners-active-click,
-.listeners-active-click * {
-  cursor: pointer;
-}
-
-* {
-  box-sizing: border-box;
-}
-:root { 
-  --bon-jour: #e2e2e2;
-  --silver-chalice: #afafaf;
-  --white: #ffffff;
- 
-  --font-size-l: 23px;
-  --font-size-m: 21px;
-  --font-size-s: 16px;
-  --font-size-xl: 36px;
-  --font-size-xxl: 57px;
-  --font-size-xxxl: 118px;
-  --font-size-xxxxl: 119px;
- 
-  --font-family-futura-condensedextrabold: "Futura-CondensedExtraBold", Helvetica;
-  --font-family-visbycf-demibold: "VisbyCF-DemiBold", Helvetica;
-  --font-family-visbycf-regular: "VisbyCF-Regular", Helvetica;
-}
-.visbycf-demi-bold-white-23px {
-  color: var(--white);
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-l);
-  font-style: normal;
-  font-weight: 700;
-}
-
-.visbycf-regular-normal-silver-chalice-21px {
-  color: var(--silver-chalice);
-  font-family: var(--font-family-visbycf-regular);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 400;
-}
-
-.visbycf-demi-bold-silver-chalice-21px {
-  color: var(--silver-chalice);
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 700;
-}
-
-.visbycf-demi-bold-white-21px {
-  color: var(--white);
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 700;
-}
-
-.visbycf-demi-bold-white-10px {
-  color: var(--white);
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.futura-condensedextra-bold-white-118px {
-  color: var(--white);
-  font-family: var(--font-family-futura-condensedextrabold);
-  font-size: var(--font-size-xxxl);
-  font-style: normal;
-  font-weight: 700;
-}
-
-.visbycf-regular-normal-bon-jour-16px {
-  color: var(--bon-jour);
-  font-family: var(--font-family-visbycf-regular);
-  font-size: var(--font-size-s);
-  font-style: normal;
-  font-weight: 400;
-}
-
-.visbycf-demi-bold-white-36px {
-  color: var(--white);
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-xl);
-  font-style: normal;
-  font-weight: 700;
-}
-
-:root {
-}
-
-
-/* screen - web-1920-1 */
-
-.web-1920-1 {
-  background-color: var(--white);
-  height: 2606px;
-  overflow: hidden;
-  overflow-x: hidden;
-  position: relative;
-  width: 1614px;
-}
-
-.web-1920-1 .group-63-HlzXCz {
-  background-color: transparent;
-  height: 2606px;
-  left: 0px;
-  position: relative;
-  top: 0px;
-  width: 1631px;
-}
-
-.web-1920-1 .rectangle-31-BxHJPN {
-  background-color: #14262b;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .rectangle-32-BxHJPN {
-  background-color: var(--white);
-  border-radius: 15.67px;
-  height: 516px;
-  left: 232px;
-  position: absolute;
-  top: 143px;
-  width: 303px;
-}
-
-.web-1920-1 .jigarpatel-BxHJPN {
-  background-color: transparent;
-  color: #3a3a3a;
-  font-family: var(--font-family-futura-condensedextrabold);
-  font-size: var(--font-size-xxl);
-  font-style: normal;
-  font-weight: 700;
-  height: 142px;
-  left: calc(20.95% - 31px);
-  letter-spacing: 0.00px;
-  line-height: 68px;
-  position: absolute;
-  text-align: center;
-  top: 391px;
-  white-space: nowrap;
-  width: 146px;
-}
-
-.web-1920-1 .group-36-BxHJPN {
-  background-color: transparent;
-  height: 316px;
-  position: absolute;
-  right: 233px;
-  top: 143px;
-  width: 717px;
-}
-
-.web-1920-1 .about-b7wuR9 {
-  background-color: transparent;
-  height: 152px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 142px;
-  position: absolute;
-  text-align: left;
-  top: 4px;
-  white-space: nowrap;
-  width: 343px;
-}
-
-.web-1920-1 .my-name-is-jigar-im-b7wuR9 {
-  background-color: transparent;
-  bottom: 1px;
-  height: 157px;
-  left: 1px;
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  overflow: hidden;
-  position: absolute;
-  text-align: left;
-  width: calc(100.00% + 2px);
-}
-
-.web-1920-1 .group-38-BxHJPN {
-  background-color: transparent;
-  height: 828px;
-  position: absolute;
-  right: calc(27.60% - 193px);
-  top: calc(27.56% - 228px);
-  width: 700px;
-}
-
-.web-1920-1 .title-cTxRBw {
-  background-color: transparent;
-  color: var(--white);
-  font-family: var(--font-family-futura-condensedextrabold);
-  font-size: var(--font-size-xxxxl);
-  font-style: normal;
-  font-weight: 700;
-  height: 153px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 143px;
-  position: absolute;
-  text-align: left;
-  top: 4px;
-  white-space: nowrap;
-  width: calc(100.00% - 94px);
-}
-
-.web-1920-1 .group-37-cTxRBw {
-  background-color: transparent;
-  bottom: 1px;
-  height: 672px;
-  left: 7px;
-  position: absolute;
-  width: calc(100.00% - 7px);
-}
-
-.web-1920-1 .asj-remodelingoverse-CL43ID {
-  background-color: transparent;
-  height: 170px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  overflow: hidden;
-  position: absolute;
-  text-align: left;
-  top: -2px;
-  width: calc(100.00% + 2px);
-}
-
-.web-1920-1 .span0-td2OXu {
-}
-
-.web-1920-1 .span1-td2OXu {
-}
-
-.web-1920-1 .span2-td2OXu {
-}
-
-.web-1920-1 .lighthouse-investmen-CL43ID {
-  background-color: transparent;
-  height: 169px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  overflow: hidden;
-  position: absolute;
-  text-align: left;
-  top: calc(33.05% - 56px);
-  width: 100%;
-}
-
-.web-1920-1 .span0-zvMLx7 {
-}
-
-.web-1920-1 .span1-zvMLx7 {
-}
-
-.web-1920-1 .span2-zvMLx7 {
-}
-
-.web-1920-1 .blueprint-alphacontr-CL43ID {
-  background-color: transparent;
-  bottom: calc(33.54% - 57px);
-  height: 170px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  overflow: hidden;
-  position: absolute;
-  text-align: left;
-  width: 100%;
-}
-
-.web-1920-1 .span0-1Pm87U {
-}
-
-.web-1920-1 .span1-1Pm87U {
-}
-
-.web-1920-1 .span2-1Pm87U {
-}
-
-.web-1920-1 .bapslead-teams-to-cr-CL43ID {
-  background-color: transparent;
-  bottom: 1px;
-  height: 170px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 25.2px;
-  overflow: hidden;
-  position: absolute;
-  text-align: left;
-  width: 100%;
-}
-
-.web-1920-1 .span0-x1xmne {
-}
-
-.web-1920-1 .span1-x1xmne {
-}
-
-.web-1920-1 .span2-x1xmne {
-}
-
-.web-1920-1 .group-64-BxHJPN {
-  background-color: transparent;
-  bottom: calc(40.58% - 146px);
-  height: 359px;
-  position: absolute;
-  right: calc(36.25% - 207px);
-  width: 571px;
-}
-
-.web-1920-1 .skills-IxxQsT {
-  background-color: transparent;
-  height: 152px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 142px;
-  position: absolute;
-  text-align: left;
-  top: 4px;
-  white-space: nowrap;
-  width: 318px;
-}
-
-.web-1920-1 .adobe-illustrator-IxxQsT {
-  background-color: transparent;
-  bottom: calc(45.99% - 17px);
-  height: 38px;
-  left: 71px;
-  letter-spacing: 0.00px;
-  line-height: 28px;
-  position: absolute;
-  text-align: left;
-  white-space: nowrap;
-  width: 179px;
-}
-
-.web-1920-1 .group-39-IxxQsT {
-  background-color: transparent;
-  bottom: calc(46.40% - 20px);
-  height: 44px;
-  left: 11px;
-  position: absolute;
-  width: 44px;
-}
-
-.web-1920-1 .rectangle-33-D6eHYL {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .ai-D6eHYL {
-  background-color: transparent;
-  color: #fe9c00;
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-l);
-  font-style: normal;
-  font-weight: 700;
-  height: calc(100.00% - 6px);
-  left: calc(44.39% - 11px);
-  letter-spacing: 0.00px;
-  line-height: 28px;
-  position: absolute;
-  text-align: center;
-  top: 6px;
-  white-space: nowrap;
-  width: 24px;
-}
-
-.web-1920-1 .adobe-photoshop-IxxQsT {
-  background-color: transparent;
-  bottom: calc(23.24% - 9px);
-  height: 38px;
-  left: 71px;
-  letter-spacing: 0.00px;
-  line-height: 28px;
-  position: absolute;
-  text-align: left;
-  white-space: nowrap;
-  width: 191px;
-}
-
-.web-1920-1 .group-40-IxxQsT {
-  background-color: transparent;
-  bottom: calc(23.20% - 10px);
-  height: 44px;
-  left: 11px;
-  position: absolute;
-  width: 44px;
-}
-
-.web-1920-1 .rectangle-34-2ZHWk0 {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .ps-2ZHWk0 {
-  background-color: transparent;
-  color: #2ca6ff;
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  height: 37px;
-  left: calc(44.39% - 11px);
-  letter-spacing: 0.00px;
-  line-height: 27px;
-  position: absolute;
-  text-align: center;
-  top: 6px;
-  white-space: nowrap;
-  width: 24px;
-}
-
-.web-1920-1 .adobe-premier-IxxQsT {
-  background-color: transparent;
-  bottom: 2px;
-  height: 38px;
-  left: 71px;
-  letter-spacing: 0.00px;
-  line-height: 28px;
-  position: absolute;
-  text-align: left;
-  white-space: nowrap;
-  width: 161px;
-}
-
-.web-1920-1 .group-41-IxxQsT {
-  background-color: transparent;
-  bottom: 1px;
-  height: 44px;
-  left: 11px;
-  position: absolute;
-  width: 44px;
-}
-
-.web-1920-1 .rectangle-35-uW68ZG {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .pr-uW68ZG {
-  background-color: transparent;
-  color: #9894f8;
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-l);
-  font-style: normal;
-  font-weight: 700;
-  height: calc(100.00% - 6px);
-  letter-spacing: 0.00px;
-  line-height: 28px;
-  position: absolute;
-  right: calc(49.68% - 12px);
-  text-align: center;
-  top: 6px;
-  white-space: nowrap;
-  width: 24px;
-}
-
-.web-1920-1 .adobe-xd-IxxQsT {
-  background-color: transparent;
-  bottom: calc(45.99% - 17px);
-  height: 38px;
-  letter-spacing: 0.00px;
-  line-height: 28px;
-  position: absolute;
-  right: 53px;
-  text-align: left;
-  white-space: nowrap;
-  width: 106px;
-}
-
-.web-1920-1 .group-42-IxxQsT {
-  background-color: transparent;
-  bottom: calc(46.40% - 20px);
-  height: 44px;
-  position: absolute;
-  right: calc(33.23% - 15px);
-  width: 44px;
-}
-
-.web-1920-1 .rectangle-36-ylC6kh {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .jira-IxxQsT {
-  background-color: transparent;
-  bottom: calc(23.24% - 9px);
-  height: 38px;
-  letter-spacing: 0.00px;
-  line-height: 28px;
-  position: absolute;
-  right: calc(22.13% - 9px);
-  text-align: left;
-  white-space: nowrap;
-  width: 42px;
-}
-
-.web-1920-1 .group-43-IxxQsT {
-  background-color: transparent;
-  bottom: 1px;
-  height: 44px;
-  position: absolute;
-  right: calc(33.23% - 15px);
-  width: 44px;
-}
-
-.web-1920-1 .rectangle-37-xNYjL9 {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .o1-t-fb-c-xNYjL9 {
-  bottom: calc(46.64% - 14px);
-  height: 30px;
-  left: calc(50.00% - 15px);
-  width: 30px;
-}
-
-.web-1920-1 .o1-t-fb-c-MTU5pi {
-  height: 100%;
-  left: 1px;
-  object-fit: cover;
-  top: 1px;
-  width: 100%;
-}
-
-.web-1920-1 .microsoft-excel-IxxQsT {
-  background-color: transparent;
-  bottom: 2px;
-  height: 38px;
-  letter-spacing: 0.00px;
-  line-height: 28px;
-  position: absolute;
-  right: -2px;
-  text-align: left;
-  white-space: nowrap;
-  width: 161px;
-}
-
-.web-1920-1 .group-44-IxxQsT {
-  background-color: transparent;
-  bottom: calc(23.20% - 10px);
-  height: 44px;
-  position: absolute;
-  right: calc(33.48% - 15px);
-  width: 44px;
-}
-
-.web-1920-1 .rectangle-38-PWlyOh {
-  background-color: var(--white);
-  border-radius: 9.98px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .i-oox-bw-PWlyOh {
-  background-color: transparent;
-  height: calc(100.00% - 13px);
-  left: 7px;
-  object-fit: cover;
-  position: absolute;
-  top: 7px;
-  width: calc(100.00% - 13px);
-}
-
-.web-1920-1 .group-45-BxHJPN {
-  background-color: transparent;
-  height: 38px;
-  left: calc(22.97% - 9px);
-  position: absolute;
-  top: calc(21.87% - 8px);
-  width: 38px;
-}
-
-.web-1920-1 .path-16-4xsg7U {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  object-fit: cover;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .path-17-4xsg7U {
-  background-color: transparent;
-  height: 18px;
-  left: calc(50.00% - 9px);
-  object-fit: cover;
-  position: absolute;
-  top: calc(49.99% - 9px);
-  width: 18px;
-}
-
-.web-1920-1 .path-18-4xsg7U {
-  background-color: transparent;
-  height: 4px;
-  object-fit: cover;
-  position: absolute;
-  right: calc(17.94% - 1px);
-  top: calc(17.93% - 1px);
-  width: 4px;
-}
-
-.web-1920-1 .group-48-BxHJPN {
-  background-color: transparent;
-  height: 38px;
-  left: calc(27.07% - 10px);
-  position: absolute;
-  top: calc(21.87% - 8px);
-  width: 38px;
-}
-
-.web-1920-1 .path-19-f1ocjK {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  object-fit: cover;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .group-47-f1ocjK {
-  background-color: transparent;
-  height: 21px;
-  position: absolute;
-  right: calc(50.00% - 11px);
-  top: calc(50.00% - 10px);
-  width: 22px;
-}
-
-.web-1920-1 .group-46-FkuyNU {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  position: relative;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .path-20-0pfXYT {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  object-fit: cover;
-  position: absolute;
-  top: 0px;
-  width: 5px;
-}
-
-.web-1920-1 .path-21-0pfXYT {
-  background-color: transparent;
-  bottom: 0px;
-  height: 16px;
-  object-fit: cover;
-  position: absolute;
-  right: 0px;
-  width: 15px;
-}
-
-.web-1920-1 .group-49-BxHJPN {
-  background-color: transparent;
-  height: 38px;
-  left: calc(18.86% - 7px);
-  position: absolute;
-  top: calc(21.87% - 8px);
-  width: 38px;
-}
-
-.web-1920-1 .path-22-TH4gWp {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  object-fit: cover;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .path-23-TH4gWp {
-  background-color: transparent;
-  height: 14px;
-  left: 1px;
-  object-fit: cover;
-  position: absolute;
-  top: calc(40.51% - 6px);
-  width: calc(100.00% - 2px);
-}
-
-.web-1920-1 .line-3-TH4gWp {
-  background-color: transparent;
-  bottom: calc(33.70% - 4px);
-  height: 11px;
-  object-fit: cover;
-  position: absolute;
-  right: 1px;
-  width: 13px;
-}
-
-.web-1920-1 .line-4-TH4gWp {
-  background-color: transparent;
-  bottom: calc(33.70% - 4px);
-  height: 11px;
-  left: 1px;
-  object-fit: cover;
-  position: absolute;
-  width: 13px;
-}
-
-.web-1920-1 .ellipse-2-BxHJPN {
-  background-color: #a0d1de;
-  border-radius: 92.16px;
-  height: 184px;
-  left: calc(20.11% - 37px);
-  position: absolute;
-  top: 173px;
-  width: 184px;
-}
-
-.web-1920-1 .group-62-BxHJPN {
-  background-color: transparent;
-  bottom: 178px;
-  height: 678px;
-  position: absolute;
-  right: calc(27.04% - 191px);
-  width: 707px;
-}
-
-.web-1920-1 .group-50-YZqb2E {
-  background-color: transparent;
-  height: 150px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 434px;
-}
-
-.web-1920-1 .hobbies-FOZqqx {
-  background-color: transparent;
-  height: calc(100.00% + 2px);
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 142px;
-  position: absolute;
-  text-align: left;
-  top: 4px;
-  white-space: nowrap;
-  width: calc(100.00% + 2px);
-}
-
-.web-1920-1 .group-61-YZqb2E {
-  background-color: transparent;
-  bottom: 1px;
-  height: 509px;
-  left: 7px;
-  position: absolute;
-  width: calc(100.00% - 7px);
-}
-
-.web-1920-1 .group-54-Bx4Jbh {
-  background-color: transparent;
-  height: 152px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .rectangle-39-1b4VeH {
-  background-color: #207289;
-  border-radius: 22.64px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .group-52-1b4VeH {
-  background-color: transparent;
-  height: 74px;
-  left: 37px;
-  position: absolute;
-  top: calc(50.00% - 37px);
-  width: 82px;
-}
-
-.web-1920-1 .group-51-1YW1dc {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  position: relative;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .path-24-f9ZnZF {
-  background-color: transparent;
-  height: calc(100.00% - 11px);
-  left: 1px;
-  object-fit: cover;
-  position: absolute;
-  top: 11px;
-  width: 100%;
-}
-
-.web-1920-1 .path-25-f9ZnZF {
-  background-color: transparent;
-  height: 6px;
-  left: 3px;
-  object-fit: cover;
-  position: absolute;
-  top: 1px;
-  width: 23px;
-}
-
-.web-1920-1 .path-26-f9ZnZF {
-  background-color: transparent;
-  height: 6px;
-  object-fit: cover;
-  position: absolute;
-  right: 1px;
-  top: calc(33.31% - 2px);
-  width: 23px;
-}
-
-.web-1920-1 .path-27-f9ZnZF {
-  background-color: transparent;
-  height: 6px;
-  object-fit: cover;
-  position: absolute;
-  right: 9px;
-  top: 7px;
-  width: 23px;
-}
-
-.web-1920-1 .group-53-1b4VeH {
-  background-color: transparent;
-  height: calc(100.00% - 27px);
-  position: absolute;
-  right: 30px;
-  top: 13px;
-  width: 515px;
-}
-
-.web-1920-1 .i-love-to-travel-and-x5z06G {
-  background-color: transparent;
-  bottom: -2px;
-  height: 71px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 15.6px;
-  position: absolute;
-  text-align: left;
-  width: calc(100.00% + 2px);
-}
-
-.web-1920-1 .traveling-x5z06G {
-  background-color: transparent;
-  height: 58px;
-  left: 1px;
-  letter-spacing: 0.00px;
-  line-height: 43px;
-  position: absolute;
-  text-align: left;
-  top: 6px;
-  white-space: nowrap;
-  width: 157px;
-}
-
-.web-1920-1 .group-58-Bx4Jbh {
-  background-color: transparent;
-  height: 152px;
-  left: 0px;
-  position: absolute;
-  top: calc(50.00% - 76px);
-  width: 100%;
-}
-
-.web-1920-1 .rectangle-40-3HW4Nx {
-  background-color: #ad6959;
-  border-radius: 22.64px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .group-55-3HW4Nx {
-  background-color: transparent;
-  height: calc(100.00% - 27px);
-  position: absolute;
-  right: 30px;
-  top: 13px;
-  width: 515px;
-}
-
-.web-1920-1 .im-a-huge-sports-fan-25xHKo {
-  background-color: transparent;
-  bottom: -2px;
-  height: 71px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 15.6px;
-  position: absolute;
-  text-align: left;
-  width: calc(100.00% + 2px);
-}
-
-.web-1920-1 .sports-25xHKo {
-  background-color: transparent;
-  height: 58px;
-  left: 1px;
-  letter-spacing: 0.00px;
-  line-height: 43px;
-  position: absolute;
-  text-align: left;
-  top: 6px;
-  white-space: nowrap;
-  width: 108px;
-}
-
-.web-1920-1 .group-57-3HW4Nx {
-  background-color: transparent;
-  bottom: calc(50.00% - 43px);
-  height: 86px;
-  left: 49px;
-  position: absolute;
-  width: 59px;
-}
-
-.web-1920-1 .group-56-QbYk1E {
-  background-color: transparent;
-  height: 100%;
-  left: 0px;
-  position: relative;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .path-28-W1dXW5 {
-  background-color: transparent;
-  bottom: 0px;
-  height: 40px;
-  left: 1px;
-  object-fit: cover;
-  position: absolute;
-  width: calc(100.00% - 3px);
-}
-
-.web-1920-1 .path-29-W1dXW5 {
-  background-color: transparent;
-  height: 42px;
-  object-fit: cover;
-  position: absolute;
-  right: 1px;
-  top: 0px;
-  width: 42px;
-}
-
-.web-1920-1 .group-60-Bx4Jbh {
-  background-color: transparent;
-  bottom: 1px;
-  height: 152px;
-  left: 0px;
-  position: absolute;
-  width: 100%;
-}
-
-.web-1920-1 .rectangle-41-4bgcos {
-  background-color: #733953;
-  border-radius: 22.64px;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-
-.web-1920-1 .group-59-4bgcos {
-  background-color: transparent;
-  height: calc(100.00% - 27px);
-  position: absolute;
-  right: 30px;
-  top: 13px;
-  width: 515px;
-}
-
-.web-1920-1 .i-enjoy-reading-and-1hD3RT {
-  background-color: transparent;
-  bottom: -2px;
-  height: 71px;
-  left: 0px;
-  letter-spacing: 0.00px;
-  line-height: 15.6px;
-  position: absolute;
-  text-align: left;
-  width: calc(100.00% + 2px);
-}
-
-.web-1920-1 .reading-1hD3RT {
-  background-color: transparent;
-  height: 58px;
-  left: 1px;
-  letter-spacing: 0.00px;
-  line-height: 43px;
-  position: absolute;
-  text-align: left;
-  top: 6px;
-  white-space: nowrap;
-  width: 140px;
-}
-
-.web-1920-1 .path-30-4bgcos {
-  background-color: transparent;
-  bottom: calc(50.00% - 31px);
-  height: 62px;
-  left: 45px;
-  object-fit: cover;
-  position: absolute;
-  width: 68px;
-}
-
-.web-1920-1 .o1-t-fb-c {
-  background-color: transparent;
-  position: absolute;
-}
-
-.web-1920-1 .xd {
-  background-color: transparent;
-  color: #f75fee;
-  font-family: var(--font-family-visbycf-demibold);
-  font-size: var(--font-size-l);
-  font-style: normal;
-  font-weight: 700;
-  height: calc(100.00% - 6px);
-  left: 7px;
-  letter-spacing: 0.00px;
-  line-height: 28px;
-  position: absolute;
-  text-align: center;
-  top: 6px;
-  white-space: nowrap;
-  width: 30px;
-}
-</style></head>
-<body style="margin: 0;background: #ffffff;">
-  <input type="hidden" id="anPageName" name="page" value="web-1920-1">
-  <div class="container-center-horizontal">
-     <div class="web-1920-1 screen " data-id="a2cd424c-5658-490f-ac66-a95c036a1bac">
-        <div class="group-63-HlzXCz" data-id="319a299d-9798-4e26-adac-51839ebfbcba">
-           <div class="rectangle-31-BxHJPN" data-id="880ea0c7-bba1-459f-af89-f7a298cb3143"></div>
-           <div class="rectangle-32-BxHJPN" data-id="8606fe1e-c437-4ef3-bb10-e2e0843e85c9"></div>
-           <div class="jigarpatel-BxHJPN" data-id="2e96b589-7cec-4d08-a220-380f6e7d21cc">JIGAR<br>PATEL</div>
-           <div class="group-36-BxHJPN" data-id="abe5aafd-89f5-44b7-98a0-5c60cd9c1df3">
-              <div class="about-b7wuR9 futura-condensedextra-bold-white-118px" data-id="d5788e0a-b63c-433b-905e-f03ecbe8b225">ABOUT</div>
-              <p class="my-name-is-jigar-im-b7wuR9 visbycf-regular-normal-silver-chalice-21px" data-id="08ebef99-313b-42a6-8052-aff799c3a374">My name is Jigar. I&#39;m a project manager with a focus on leading teams and delivering successful projects. From managing property renovations to working on large-scale initiatives for non-profits, I make sure projects run smoothly, on time, and within budget.<br><br>I’ve worked across different industries, always looking for ways to improve processes and get the best results for the people I work with.<br></p>
-           </div>
-           <div class="group-38-BxHJPN" data-id="f8d739de-1f20-4bd8-9c7a-c86eb28bbfc1">
-              <h1 class="title-cTxRBw" data-id="c1d22636-4c8b-46a7-8cce-6bacc446c2bf">EXPERIENCE</h1>
-              <div class="group-37-cTxRBw" data-id="4ae16492-084c-4abc-80ac-656d65abc280">
-                 <p class="asj-remodelingoverse-CL43ID visbycf-demi-bold-silver-chalice-21px" data-id="4ec440d4-73be-4b69-aafb-76a37a70b20a"><span class="span0-td2OXu visbycf-demi-bold-white-21px">ASJ Remodeling<br></span><span class="span1-td2OXu visbycf-demi-bold-white-10px"><br></span><span class="span2-td2OXu visbycf-regular-normal-silver-chalice-21px">Oversee renovations for 100+ properties, helping the business thrive while making sure everything stays on schedule and within budget.<br><br>February ‘21 - Present<br></span></p>
-                 <p class="lighthouse-investmen-CL43ID visbycf-demi-bold-silver-chalice-21px" data-id="20073c85-44ae-4774-9891-cc15e7864ff5"><span class="span0-zvMLx7 visbycf-demi-bold-white-21px">Lighthouse Investments<br></span><span class="span1-zvMLx7 visbycf-demi-bold-white-10px"><br></span><span class="span2-zvMLx7 visbycf-regular-normal-silver-chalice-21px">Managed a portfolio of 35 hotels, using data dashboards to boost revenue and striking deals with vendors to save some cash.<br><br>January ‘20 - December ’20<br></span></p>
-                 <p class="blueprint-alphacontr-CL43ID visbycf-demi-bold-silver-chalice-21px" data-id="c0066386-2dda-4278-a84c-5ebda416a004"><span class="span0-1Pm87U visbycf-demi-bold-white-21px">Blueprint Alpha<br></span><span class="span1-1Pm87U visbycf-demi-bold-white-10px"><br></span><span class="span2-1Pm87U visbycf-regular-normal-silver-chalice-21px">Contributed to an object detection tool as a Software Engineer Intern, making the system work better and speeding up database results.<br><br>May ‘17 - July ’21<br></span></p>
-                 <p class="bapslead-teams-to-cr-CL43ID visbycf-demi-bold-silver-chalice-21px" data-id="5739e5ca-3389-4060-bf5f-230f69cf2138"><span class="span0-x1xmne visbycf-demi-bold-white-21px">B.A.P.S<br></span><span class="span1-x1xmne visbycf-demi-bold-white-10px"><br></span><span class="span2-x1xmne visbycf-regular-normal-silver-chalice-21px">Lead teams to create content, run multimedia projects, and organize events that uplift the community and foster spiritual growth.<br><br>August ‘14 - Present<br></span></p>
-              </div>
-           </div>
-           <div class="group-64-BxHJPN" data-id="52137bbd-6f2f-4f30-a93c-d820f6039340">
-              <div class="skills-IxxQsT futura-condensedextra-bold-white-118px" data-id="7cb00618-0f13-4b1a-87ed-31e2781fe64d">SKILLS</div>
-              <div class="adobe-illustrator-IxxQsT visbycf-demi-bold-white-23px" data-id="cd4fbca2-4937-454e-94fb-a253c243ba11">Adobe Illustrator</div>
-              <div class="group-39-IxxQsT" data-id="56a18e76-7969-4f2d-9e96-a294f3a3eef7">
-                 <div class="rectangle-33-D6eHYL" data-id="5c1fbaab-5e6e-4a72-831b-ca99e70efa27"></div>
-                 <div class="ai-D6eHYL" data-id="7f948a89-0559-4123-b86c-084749c35125">Ai</div>
-              </div>
-              <div class="adobe-photoshop-IxxQsT visbycf-demi-bold-white-23px" data-id="7e176e21-ffc0-4c19-b539-527f443bd27c">Adobe Photoshop</div>
-              <div class="group-40-IxxQsT" data-id="14654c48-2b42-41b8-9b64-67d3394ae74c">
-                 <div class="rectangle-34-2ZHWk0" data-id="3b7d6716-9fab-4409-9eac-f25d91dc8c43"></div>
-                 <div class="ps-2ZHWk0" data-id="a16ecbe5-da02-4e3d-9ba5-14938986ff72">Ps</div>
-              </div>
-              <div class="adobe-premier-IxxQsT visbycf-demi-bold-white-23px" data-id="327b7012-dd42-476c-9766-0415c34193c5">Adobe Premier</div>
-              <div class="group-41-IxxQsT" data-id="58bff3c3-2512-4949-b022-c11c08053389">
-                 <div class="rectangle-35-uW68ZG" data-id="994a78b8-a499-4315-b950-0416a4761402"></div>
-                 <div class="pr-uW68ZG" data-id="0fc4ee8f-a3e7-4c2a-b928-6043ea34b962">Pr</div>
-              </div>
-              <div class="adobe-xd-IxxQsT visbycf-demi-bold-white-23px" data-id="856236cc-5bf7-4dd0-a2ea-d8cd05c8977e">Adobe Xd</div>
-              <div class="group-42-IxxQsT" data-id="f8305750-f206-4dc6-aadd-ad88eb8c9d96">
-                 <div class="rectangle-36-ylC6kh" data-id="e795aee8-f03c-436c-a2f6-1853f20aa9b4"></div>
-                 <div class="xd" data-id="57b8c032-849f-4a61-85eb-3b14f699ecd4">Xd</div>
-              </div>
-              <div class="jira-IxxQsT visbycf-demi-bold-white-23px" data-id="29513ae5-7c2b-425e-9f27-11b34c8b1849">Jira</div>
-              <div class="group-43-IxxQsT" data-id="3a670b5c-1d23-4d4b-96f0-fc970e891d98">
-                 <div class="rectangle-37-xNYjL9" data-id="b713bfa3-5562-49e6-ab16-79689600d679"></div>
-                 <div class="o1-t-fb-c-xNYjL9 o1-t-fb-c" data-id="cd2aa9b6-8bf9-4c21-990b-cb75bf6c8648"><img class="o1-t-fb-c-MTU5pi o1-t-fb-c" data-id="35e3da32-953a-40db-bd1f-43e762bbe7f0" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/o1tfbc-1x-png@1x.png" alt="o1TFbC"></div>
-              </div>
-              <div class="microsoft-excel-IxxQsT visbycf-demi-bold-white-23px" data-id="b25e96c2-3470-4d50-bbe3-b916399bfb3f">Microsoft Excel</div>
-              <div class="group-44-IxxQsT" data-id="bb12f63a-2080-4400-899f-c1bba3894bde">
-                 <div class="rectangle-38-PWlyOh" data-id="0e97381d-4d88-4e6e-ae5a-d419e6f903ce"></div>
-                 <div class="xd" data-id="50cc1e57-10f6-4245-ada6-355456235871">Xd</div>
-                 <img class="i-oox-bw-PWlyOh" data-id="b148c77e-1cb5-4eeb-a88e-3e1af70b7414" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/iooxbw-1x-png@1x.png" alt="iOoxBW">
-              </div>
-           </div>
-           <a href="https://www.instagram.com/jigarp02/" target="_blank"><div class="group-45-BxHJPN" data-id="992728b2-8500-4726-8e60-eb289c4e6fda"><img class="path-16-4xsg7U" data-id="bccda75a-9d42-4c2f-ac39-2a70b7a4d412" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-16-1x-png@1x.png" alt="Path 16"><img class="path-17-4xsg7U" data-id="de6297dd-5fc7-44d1-9429-4fa43e0d0a18" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-17-1x-png@1x.png" alt="Path 17"><img class="path-18-4xsg7U" data-id="bc50cbfb-e26f-4937-97c5-98f3b11de55e" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-18-1x-png@1x.png" alt="Path 18"></div></a>
-            <a href="https://www.linkedin.com/in/jigar-k-patel/" target="_blank"><div class="group-48-BxHJPN" data-id="6061d6e6-18cf-428a-97b3-ef60a9e5b153">
-              <img class="path-19-f1ocjK" data-id="d54874e4-5e6e-40d6-88a3-106d831427e1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-16-1x-png@1x.png" alt="Path 19">
-              <div class="group-47-f1ocjK" data-id="f25fb155-92f6-4db4-bfa8-3a986d01ad4d">
-                 <div class="group-46-FkuyNU" data-id="e846327a-938c-4891-9057-40a6fe33feab"><img class="path-20-0pfXYT" data-id="9751fa90-d4c7-43ec-9fc6-c1131c2011a0" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-20-1x-png@1x.png" alt="Path 20"><img class="path-21-0pfXYT" data-id="e4b03788-10ce-463a-a0db-8da08e8eba37" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-21-1x-png@1x.png" alt="Path 21"></div>
-              </div>
-           </div></a>
-           <a href= "mailto: jigarkpat@gmail.com"> <div class="group-49-BxHJPN" data-id="12249cfe-2db3-48c9-a422-ef7a0c81b6e5"><img class="path-22-TH4gWp" data-id="b229148b-f31c-482c-a743-8fdcf5e39c6b" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-16-1x-png@1x.png" alt="Path 22"><img class="path-23-TH4gWp" data-id="5b91bd61-333d-41e7-a8c0-a84e5dd2caf8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-23-1x-png@1x.png" alt="Path 23"><img class="line-3-TH4gWp" data-id="a50baef7-3f75-400e-97e1-4cced0c2f613" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/line-3-1x-png@1x.png" alt="Line 3"><img class="line-4-TH4gWp" data-id="c86724a6-5147-4a96-996e-fe49084cf5f3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/line-4-1x-png@1x.png" alt="Line 4"></div></a>
-           <div class="ellipse-2-BxHJPN" data-id="bc5b9dee-6880-452d-9054-586e59254f0f"></div>
-           <div class="group-62-BxHJPN" data-id="2b1525e5-bae9-4d06-b0f6-ff0438f79ed4">
-              <div class="group-50-YZqb2E" data-id="f6b8517f-3c80-4e22-b2a6-afb6ab487226">
-                 <div class="hobbies-FOZqqx futura-condensedextra-bold-white-118px" data-id="a98d63e3-1866-460e-9c6f-d082b41682f7">HOBBIES</div>
-              </div>
-              <div class="group-61-YZqb2E" data-id="22801247-4831-47b8-99a3-330b68c3ad7d">
-                 <div class="group-54-Bx4Jbh" data-id="a77c8edb-1b3c-424c-9a18-9c5409400576">
-                    <div class="rectangle-39-1b4VeH" data-id="ec89fc83-a841-4518-8e85-2ca8b55b52d2"></div>
-                    <div class="group-52-1b4VeH" data-id="f5d433ec-3324-4d2b-af24-d8e15a43291e">
-                       <div class="group-51-1YW1dc" data-id="69efaa55-2f2b-48d2-91d0-74445333aa84"><img class="path-24-f9ZnZF" data-id="0b73a1f1-6c7e-42ba-839c-eac7a1206eb8" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-24-1x-png@1x.png" alt="Path 24"><img class="path-25-f9ZnZF" data-id="18fe9d99-ccaa-4918-bd60-c86809ad211e" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-25-1x-png@1x.png" alt="Path 25"><img class="path-26-f9ZnZF" data-id="a71660eb-31fc-4cfa-8c56-f6466b05424a" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-26-1x-png@1x.png" alt="Path 26"><img class="path-27-f9ZnZF" data-id="b3a809cc-192e-4c37-84e5-5ad8a11f667a" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-27-1x-png@1x.png" alt="Path 27"></div>
-                    </div>
-                    <div class="group-53-1b4VeH" data-id="56def100-7cae-4e08-9130-9af8c21f9db1">
-                       <p class="i-love-to-travel-and-x5z06G visbycf-regular-normal-bon-jour-16px" data-id="7199f7c7-7f74-4c22-8bb4-a200b18fdd5f">I love to travel, and my favorite trip was a week-long hiking trip in Colorado, where I explored beautiful trails and took in some amazing sights.</p>
-                       <div class="traveling-x5z06G visbycf-demi-bold-white-36px" data-id="c27f26b7-e613-4c71-8617-4e2bad2d8a75">Traveling</div>
-                    </div>
-                 </div>
-                 <div class="group-58-Bx4Jbh" data-id="8c843aec-a4cc-4570-942f-748eb1b1f74b">
-                    <div class="rectangle-40-3HW4Nx" data-id="421dc767-36e9-46f2-8700-2c53a9975501"></div>
-                    <div class="group-55-3HW4Nx" data-id="844bbe50-bd46-47b7-bbd2-0b2b2ee33b58">
-                       <p class="im-a-huge-sports-fan-25xHKo visbycf-regular-normal-bon-jour-16px" data-id="1e0fd6d6-ffd7-4bdd-9be3-6f6c9f599306">I’m a huge sports fan and love getting in on the action! Whether I’m cheering for my favorite teams on TV or playing a pickup game with friends, I’m always ready for anything!</p>
-                       <div class="sports-25xHKo visbycf-demi-bold-white-36px" data-id="43aa14b8-368f-4a69-901f-d00e48ba5468">Sports</div>
-                    </div>
-                    <div class="group-57-3HW4Nx" data-id="94c1b8b9-6e48-461f-9c00-680d512130a2">
-                       <div class="group-56-QbYk1E" data-id="246d0bb6-e0db-45bb-bf1e-6e063749438d"><img class="path-28-W1dXW5" data-id="5b04d068-b604-447c-9ab9-ec9e80422a5c" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-28-1x-png@1x.png" alt="Path 28"><img class="path-29-W1dXW5" data-id="57c32385-c3d3-491b-8be9-0e3bd10b5d7e" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-29-1x-png@1x.png" alt="Path 29"></div>
-                    </div>
-                 </div>
-                 <div class="group-60-Bx4Jbh" data-id="9a1473dc-91e2-4feb-b354-9c4c381a778a">
-                    <div class="rectangle-41-4bgcos" data-id="0fabe05f-f818-406e-866a-52f1d03629ea"></div>
-                    <div class="group-59-4bgcos" data-id="5d8a12e2-e27d-443e-b335-108650c22e39">
-                       <p class="i-enjoy-reading-and-1hD3RT visbycf-regular-normal-bon-jour-16px" data-id="f6d8d749-2b63-4426-976f-63926597324b">I enjoy reading, and one of my recent favorites is &#34;The Midnight Library&#34; by Matt Haig. It really made me think about the choices we make in life and the possibilities that come with each decision.</p>
-                       <div class="reading-1hD3RT visbycf-demi-bold-white-36px" data-id="d2c70374-f8b0-4857-8b12-66be855dd721">Reading</div>
-                    </div>
-                    <img class="path-30-4bgcos" data-id="58d93a6a-7baa-46ca-b02c-d68612fe9ad4" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/66e62627f16f8507b037f4ae/releases/66e63307c729e95ab85dbe71/img/path-30-1x-png@1x.png" alt="Path 30">
-                 </div>
-              </div>
-           </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jigar Patel | Project Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <header class="hero">
+      <nav class="nav">
+        <span class="logo">JP</span>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#contact">Contact</a>
         </div>
-     </div>
-  </div>
-  <script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script>
-</body>
+      </nav>
+      <section class="hero-content">
+        <div>
+          <p class="eyebrow">Project Manager · Operations · Strategy</p>
+          <h1>Jigar Patel</h1>
+          <p class="subtitle">
+            I lead cross-functional teams and deliver complex projects on time,
+            on budget, and with measurable impact. I blend operational rigor with
+            a creative, people-first approach.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="mailto:jigarkpat@gmail.com">Let’s connect</a>
+            <a class="ghost-button" href="#experience">View experience</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="profile-ring">
+            <span class="initials">JP</span>
+          </div>
+          <div class="hero-card-info">
+            <h2>Based in New Jersey</h2>
+            <p>
+              Focused on leading teams, optimizing workflows, and delivering
+              standout results for stakeholders.
+            </p>
+            <div class="hero-metrics">
+              <div>
+                <span class="metric">100+</span>
+                <span class="metric-label">Properties overseen</span>
+              </div>
+              <div>
+                <span class="metric">35</span>
+                <span class="metric-label">Hotels managed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="section-header">
+          <h2>About</h2>
+          <p>
+            My name is Jigar. I’m a project manager with a focus on leading teams
+            and delivering successful projects. From managing property
+            renovations to working on large-scale initiatives for non-profits, I
+            make sure projects run smoothly, on time, and within budget.
+            I’ve worked across different industries, always looking for ways to
+            improve processes and get the best results for the people I work
+            with.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <p>Highlights from roles that shaped my leadership and delivery style.</p>
+        </div>
+        <div class="grid two-column">
+          <article class="experience-card">
+            <div>
+              <h3>ASJ Remodeling</h3>
+              <span class="role">Project Manager · Feb ‘21 - Present</span>
+            </div>
+            <p>
+              Oversee renovations for 100+ properties, helping the business
+              thrive while making sure everything stays on schedule and within
+              budget.
+            </p>
+          </article>
+          <article class="experience-card">
+            <div>
+              <h3>Lighthouse Investments</h3>
+              <span class="role">Asset Manager · Jan ‘20 - Dec ‘20</span>
+            </div>
+            <p>
+              Managed a portfolio of 35 hotels, using data dashboards to boost
+              revenue and striking deals with vendors to save some cash.
+            </p>
+          </article>
+          <article class="experience-card">
+            <div>
+              <h3>Blueprint Alpha</h3>
+              <span class="role">Software Engineer Intern · May ‘17 - Jul ‘21</span>
+            </div>
+            <p>
+              Contributed to an object detection tool as a Software Engineer
+              Intern, making the system work better and speeding up database
+              results.
+            </p>
+          </article>
+          <article class="experience-card">
+            <div>
+              <h3>B.A.P.S</h3>
+              <span class="role">Team Lead · Aug ‘14 - Present</span>
+            </div>
+            <p>
+              Lead teams to create content, run multimedia projects, and
+              organize events that uplift the community and foster spiritual
+              growth.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>Tools and strengths I use to move work forward.</p>
+        </div>
+        <div class="skills-grid">
+          <span>Adobe Illustrator</span>
+          <span>Adobe Photoshop</span>
+          <span>Adobe Premiere</span>
+          <span>Adobe XD</span>
+          <span>Jira</span>
+          <span>Microsoft Excel</span>
+          <span>Project Planning</span>
+          <span>Stakeholder Management</span>
+        </div>
+      </section>
+
+      <section id="hobbies" class="section">
+        <div class="section-header">
+          <h2>Hobbies</h2>
+          <p>What keeps me energized outside of work.</p>
+        </div>
+        <div class="grid three-column">
+          <article class="hobby-card">
+            <h3>Traveling</h3>
+            <p>
+              I love to travel, and my favorite trip was a week-long hiking trip
+              in Colorado, where I explored beautiful trails and took in some
+              amazing sights.
+            </p>
+          </article>
+          <article class="hobby-card">
+            <h3>Sports</h3>
+            <p>
+              I’m a huge sports fan and love getting in on the action! Whether
+              I’m cheering for my favorite teams on TV or playing a pickup game
+              with friends, I’m always ready for anything!
+            </p>
+          </article>
+          <article class="hobby-card">
+            <h3>Reading</h3>
+            <p>
+              I enjoy reading, and one of my recent favorites is “The Midnight
+              Library” by Matt Haig. It really made me think about the choices
+              we make in life and the possibilities that come with each
+              decision.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section id="contact" class="section contact">
+      <div>
+        <h2>Let’s build something impactful.</h2>
+        <p>
+          Open to connecting on new projects, leadership roles, or speaking
+          opportunities.
+        </p>
+      </div>
+      <div class="contact-links">
+        <a class="primary-button" href="mailto:jigarkpat@gmail.com">Email me</a>
+        <a class="ghost-button" href="https://www.linkedin.com/in/jigar-k-patel/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="ghost-button" href="https://www.instagram.com/jigarp02/" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 Jigar Patel. Crafted with intention.</p>
+    </footer>
+  </body>
 </html>
