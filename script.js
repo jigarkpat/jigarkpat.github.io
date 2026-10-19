@@ -1,12 +1,41 @@
 /* Jigar Patel — site behavior
-   1. Scroll reveals
-   2. Scoreboard count-up
-   3. Hero card tilt
-   4. Skill card flip
-   Honors prefers-reduced-motion: no tilt, no count-up, no reveal motion. */
+   1. Theme toggle
+   2. Scroll reveals
+   3. Scoreboard count-up
+   4. Hero card tilt
+   5. Skill card flip
+   Honors prefers-reduced-motion: no tilt, no count-up, no reveal motion.
+   The theme attribute is set in <head> before first paint. */
 
 (function () {
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- 1. Theme toggle ---------- */
+  var root = document.documentElement;
+  var toggle = document.querySelector(".theme-toggle");
+
+  function applyTheme(theme, persist) {
+    var light = theme === "light";
+    root.setAttribute("data-theme", light ? "light" : "dark");
+    if (persist) {
+      try {
+        localStorage.setItem("theme", light ? "light" : "dark");
+      } catch (e) {}
+    }
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", light ? "#F2EBDD" : "#0E0E0E");
+    if (!toggle) return;
+    toggle.setAttribute("aria-pressed", light ? "true" : "false");
+    toggle.setAttribute("aria-label", light ? "Light mode" : "Dark mode");
+  }
+
+  applyTheme(root.getAttribute("data-theme") === "light" ? "light" : "dark", false);
+
+  if (toggle) {
+    toggle.addEventListener("click", function () {
+      applyTheme(root.getAttribute("data-theme") === "light" ? "dark" : "light", true);
+    });
+  }
 
   /* ---------- 1. Scroll reveals ---------- */
   var reveals = document.querySelectorAll(".reveal");
