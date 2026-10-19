@@ -93,6 +93,8 @@
         "rotateX(" + rotateX.toFixed(2) + "deg) rotateY(" + rotateY.toFixed(2) + "deg)";
       tilt.style.setProperty("--mx", (px * 100).toFixed(1) + "%");
       tilt.style.setProperty("--my", (py * 100).toFixed(1) + "%");
+      tilt.style.setProperty("--px", ((px - 0.5) * 2).toFixed(3));
+      tilt.style.setProperty("--py", ((py - 0.5) * 2).toFixed(3));
     });
 
     tilt.addEventListener("mouseleave", function () {
@@ -100,6 +102,8 @@
       tilt.style.transform = "rotateX(0deg) rotateY(0deg)";
       tilt.style.setProperty("--mx", "30%");
       tilt.style.setProperty("--my", "20%");
+      tilt.style.setProperty("--px", "0");
+      tilt.style.setProperty("--py", "0");
     });
   }
 
