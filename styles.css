@@ -1,4 +1,4 @@
-/* Jigar Patel — Hall of Fame Edition
+/* Jigar Patel — Career Edition
    1. Tokens
    2. Base
    3. Header
@@ -209,18 +209,12 @@ a {
 
 @media (max-width: 720px) {
   .site-header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas:
-      "logo resume"
-      "nav nav";
+    flex-wrap: wrap;
     row-gap: 0.35rem;
     padding: 0.65rem 1rem 0.7rem;
   }
 
-  .logo { grid-area: logo; }
-  .site-header .btn { grid-area: resume; justify-self: end; }
-  .nav { grid-area: nav; }
+  .nav { flex-basis: 100%; }
 }
 
 /* ========== 4. Hero and player card ========== */
@@ -917,7 +911,7 @@ a {
 .flip-card {
   display: block;
   width: 100%;
-  min-height: 190px;
+  height: 220px;
   padding: 0;
   border: 0;
   background: transparent;
@@ -928,9 +922,13 @@ a {
   font: inherit;
 }
 
+/* .flip-inner is a span. It has to be a block box with a real height.
+   Height on an inline box is ignored, so the absolute faces collapsed
+   to a tiny clipped chip. */
 .flip-inner {
+  display: block;
   position: relative;
-  min-height: 190px;
+  width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.55s ease;
