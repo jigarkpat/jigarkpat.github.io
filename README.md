@@ -4,7 +4,7 @@ Static site for GitHub Pages. It is served at [jigarkpat.github.io](https://jiga
 
 ## Where things live
 
-- `index.html` — the whole page, in this order: hero, career chapters, education, stat wall, card set, contact. Each block starts with a comment such as `<!-- CAREER: Blueprint Alpha -->`.
+- `index.html` — the whole page, in this order: hero, career chapters, education, impact, skills, contact. Each block starts with a comment such as `<!-- CAREER: Blueprint Alpha -->`.
 - `styles.css` — layout, color, and type. Section markers match the page.
 - `script.js` — theme toggle, scroll reveals, scoreboard count-up, hero-card tilt, and skill-card flip.
 - `assets/favicon.svg` — the tab icon.

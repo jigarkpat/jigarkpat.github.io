@@ -309,14 +309,6 @@ a {
     flex-basis: 100%;
     column-gap: 0.6rem;
   }
-
-  .career-intro,
-  .stats,
-  .cards,
-  .contact,
-  .chapter {
-    scroll-margin-top: 7rem;
-  }
 }
 
 /* ========== 4. Hero and player card ========== */
@@ -674,6 +666,16 @@ a {
 .contact,
 .chapter {
   scroll-margin-top: 5rem;
+}
+
+@media (max-width: 720px) {
+  .career-intro,
+  .stats,
+  .cards,
+  .contact,
+  .chapter {
+    scroll-margin-top: 7rem;
+  }
 }
 
 .chapter {
