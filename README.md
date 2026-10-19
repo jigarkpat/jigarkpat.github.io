@@ -7,13 +7,12 @@ Static site for GitHub Pages. It is served at [jigarkpat.github.io](https://jiga
 - `index.html` — the whole page, in this order: hero, career chapters, education, stat wall, card set, off the clock, contact. Each block starts with a comment such as `<!-- CAREER: Blueprint Alpha -->`.
 - `styles.css` — layout, color, and type. Section markers match the page.
 - `script.js` — scroll reveals, scoreboard count-up, hero-card tilt, and skill-card flip.
-- `assets/Jigar-Patel-Resume.pdf` — the file behind Download resume.
 - `assets/favicon.svg` — the tab icon.
 - `.nojekyll` — tells GitHub Pages to serve the files as they are.
 
 ## Change the words
 
-Edit the text in `index.html`. Keep every claim aligned with the resume. Do not add a phone number or a street address.
+Edit the text in `index.html`. Keep every claim aligned with the resume. Do not add a phone number, a street address, or a resume download. Email (`jigarkpat@gmail.com`) is the only contact method, in the hero and the contact section.
 
 ## Change colors and fonts
 
