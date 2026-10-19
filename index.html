@@ -7,6 +7,19 @@
   <meta name="description" content="Jigar Patel is a product operations manager. Early team member at Spire Technology, previously project manager at AJS Remodeling and associate portfolio manager at Lighthouse Investments.">
   <meta name="author" content="Jigar Patel">
   <meta name="theme-color" content="#0E0E0E">
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") theme = saved;
+        else if (window.matchMedia("(prefers-color-scheme: light)").matches) theme = "light";
+      } catch (e) {}
+      document.documentElement.setAttribute("data-theme", theme);
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", theme === "light" ? "#F2EBDD" : "#0E0E0E");
+    })();
+  </script>
   <link rel="canonical" href="https://jigarkpat.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +37,17 @@
       <a href="#stats">Stats</a>
       <a href="#cards">Cards</a>
       <a href="#contact">Contact</a>
+      <button type="button" class="theme-toggle" aria-pressed="false" aria-label="Dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
+          <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7L4.9 19.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+        </svg>
+        <span class="theme-toggle-text" data-when="dark">Dark</span>
+        <span class="theme-toggle-text" data-when="light">Light</span>
+      </button>
     </nav>
   </header>
 
@@ -33,7 +57,6 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-frame">
         <div class="frame-top">
-          <p>Product Operations Manager</p>
           <p>Career Edition</p>
         </div>
 
@@ -64,8 +87,7 @@
                     <p class="card-serial">No. 01</p>
                   </div>
                   <p class="card-name">Jigar Patel</p>
-                  <p class="card-role">Product Ops</p>
-                  <p class="card-role-full">Product Operations Manager</p>
+                  <p class="card-role">Product &amp; Growth</p>
 
                   <div class="card-art">
                     <!-- PHOTO SLOT
@@ -500,14 +522,6 @@
       </div>
     </section>
 
-    <!-- ========== OFF THE CLOCK ========== -->
-    <section class="offclock" id="off" aria-labelledby="off-title">
-      <div class="wrap reveal">
-        <h2 id="off-title">Off the clock</h2>
-        <p>BAPS seva, the outdoors, and basketball, football, soccer, and golf.</p>
-      </div>
-    </section>
-
     <!-- ========== CONTACT ========== -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="wrap reveal">
@@ -521,11 +535,6 @@
       </div>
     </section>
   </main>
-
-  <footer class="colophon">
-    <p>Jigar Patel · Product Operations</p>
-    <p>Career Edition</p>
-  </footer>
 
   <noscript>
     <style>
