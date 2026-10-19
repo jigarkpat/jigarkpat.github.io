@@ -38,10 +38,10 @@ Fonts load from the Google Fonts link in `index.html` (Anton for headlines, Inte
 
 ## Photo and LinkedIn
 
-There is no portrait yet. Search `index.html` for `PHOTO SLOT` and follow the comment.
+The hero card portrait is `assets/jigar-portrait.webp`, with `assets/jigar-portrait.png` as the fallback. The cutout is used as-is. Its bottom edge is a hard crop, so the image sits flush with the bottom of the art panel.
 
 Search for `LinkedIn`. Add a real profile URL when you have one. No link is rendered until then.
 
 ## Motion
 
-The hero card tilts toward the mouse, scoreboard numbers count up, and sections fade in on scroll. All three stay off when the visitor has `prefers-reduced-motion` turned on. Skill cards still flip; the flip is instant in that case.
+The hero card tilts toward the mouse. Inside the art panel, the gold dot field, the stripes, and the portrait sit at different depths and shift by different amounts (`--px` and `--py` on the slab). Scoreboard numbers count up, and sections fade in on scroll. Tilt, the art parallax, the count-up, and the fade stay off when the visitor has `prefers-reduced-motion` turned on, and the tilt stays off on a coarse pointer or a narrow window. Skill cards still flip; the flip is instant when motion is reduced.
