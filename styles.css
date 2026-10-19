@@ -492,8 +492,7 @@ a {
   transition: none;
 }
 
-.slab-label,
-.slab-foot {
+.slab-label {
   display: flex;
   justify-content: space-between;
   gap: 0.75rem;
@@ -508,12 +507,6 @@ a {
   color: var(--ink);
   padding: 0.55rem 0.7rem;
   margin-bottom: 10px;
-}
-
-.slab-foot {
-  color: var(--cream-text);
-  padding: 0.7rem 0.2rem 0.15rem;
-  font-size: 1.05rem;
 }
 
 .player-card {
@@ -559,22 +552,11 @@ a {
   to { background-position: center, 200% 50%; }
 }
 
-.card-top,
 .card-name,
 .card-role,
 .attr-note,
 .card-foot {
   margin: 0;
-}
-
-.card-top {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  font-family: var(--font-card);
-  letter-spacing: 0.12em;
-  font-size: 1.05rem;
-  color: var(--cream-text);
 }
 
 .card-name {
@@ -643,7 +625,6 @@ a {
 @media (max-width: 899px) {
   .slab { padding: 8px 8px 8px; }
   .slab-label { margin-bottom: 8px; padding: 0.45rem 0.6rem; }
-  .slab-foot { padding-top: 0.45rem; }
 
   .player-card {
     min-height: 0;
